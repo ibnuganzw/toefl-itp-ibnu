@@ -71,6 +71,14 @@
   stroke-width: 1.6;
 }
 
+.appTopBrandLogo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
 .appTopBrand > span:last-child {
   display: grid;
   min-width: 0;
@@ -194,6 +202,28 @@
   height: 15px;
 }
 
+.appMobileControls {
+  display: none;
+}
+
+.appMobileIconButton {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid var(--arcane-border);
+  border-radius: 16px;
+  background: rgb(10 14 24 / 70%);
+  color: var(--arcane-text);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 6%);
+}
+
+.appMobileIconButton .uiIcon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2.2;
+}
+
 @media (max-width: 1080px) {
   .appTopNavigation {
     grid-template-columns: auto minmax(0, 1fr);
@@ -222,67 +252,178 @@
   .appTopNavigation {
     display: grid;
     min-height: 0;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 5px;
-    padding: 7px 8px 0;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+    padding: 14px 24px;
+    background:
+      radial-gradient(circle at 12% 0%, rgb(91 214 189 / 9%), transparent 34%),
+      linear-gradient(180deg, rgb(8 12 20 / 98%), rgb(8 12 20 / 94%));
   }
 
   .appTopBrand {
-    width: 100%;
-    justify-content: center;
-    padding-block: 2px;
+    width: auto;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 0;
   }
 
   .appTopBrandLogo,
   .appTopBrandLogo .uiIcon {
-    width: 30px;
-    height: 30px;
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
   }
 
   .appTopBrand strong {
-    font-size: 0.78rem;
+    font-size: 1.15rem;
+    line-height: 1.1;
+  }
+
+  .appTopBrand small {
+    display: block;
+    max-width: 210px;
+    overflow: hidden;
+    font-size: 0.64rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .appMobileControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .appNavigation {
+    grid-column: 1 / -1;
+    display: none;
     width: 100%;
+    margin-top: 8px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(255 255 255 / 9%);
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .appTopNavigation[data-mobile-menu-open="true"] .appNavigation {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    justify-content: stretch;
-    gap: 2px;
   }
 
   .appNavItem {
-    min-height: 42px;
-    display: grid;
+    min-height: 58px;
+    width: 100%;
     min-width: 0;
-    grid-template-rows: 16px auto;
-    justify-items: center;
-    gap: 4px;
-    border-radius: var(--ui-radius-sm) var(--ui-radius-sm) 0 0;
-    padding: 8px 9px 10px;
-    font-size: 0.6rem;
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    justify-items: start;
+    gap: 13px;
+    border-radius: 15px;
+    padding: 14px 16px;
+    font-size: 1rem;
   }
 
   .appNavItem::after {
-    right: 8px;
-    bottom: 2px;
-    left: 8px;
+    right: 16px;
+    bottom: 7px;
+    left: 53px;
   }
 
   .appNavIcon,
   .appNavIcon .uiIcon {
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
   }
 
   .appNavLabel--desktop {
-    display: none;
+    display: block;
   }
 
   .appNavLabel--mobile {
-    display: block;
+    display: none;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+}
+
+/* Quick-access bottom navigation — desktop hides it, phones rely on it. */
+.appBottomNavigation {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  /* The bottom navigation replaces the hamburger menu on phones. */
+  .appMobileMenuButton {
+    display: none;
+  }
+
+  .appTopNavigation .appNavigation {
+    display: none;
+  }
+
+  .appBottomNavigation {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 60;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    padding: 8px max(8px, var(--arcane-safe-right)) calc(8px + var(--arcane-safe-bottom))
+      max(8px, var(--arcane-safe-left));
+    border-top: 1px solid var(--arcane-border);
+    background: linear-gradient(180deg, rgb(12 17 31 / 96%), rgb(6 9 17 / 98%));
+    backdrop-filter: blur(18px) saturate(1.08);
+    box-shadow: 0 -10px 30px rgb(0 0 0 / 34%);
+  }
+
+  .appBottomNavItem {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: 3px;
+    min-height: 54px;
+    padding: 6px 2px;
+    border: 0;
+    border-radius: var(--ui-radius-md);
+    background: transparent;
+    color: var(--arcane-text-muted);
+    font-family: var(--ui-font-sans);
+    font-size: 0.64rem;
+    font-weight: 700;
+    line-height: 1.1;
+    cursor: pointer;
+  }
+
+  .appBottomNavItem.isActive {
+    color: var(--arcane-emerald);
+    background: rgb(91 214 189 / 9%);
+  }
+
+  .appBottomNavItem:focus-visible {
+    outline: 2px solid var(--arcane-emerald);
+    outline-offset: -2px;
+  }
+
+  .appBottomNavIcon {
+    display: grid;
+    width: 24px;
+    height: 24px;
+    place-items: center;
+  }
+
+  .appBottomNavIcon .uiIcon {
+    width: 22px;
+    height: 22px;
+    stroke-width: 2;
+  }
+
+  .appBottomNavLabel {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

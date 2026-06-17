@@ -5,11 +5,13 @@ import { DashboardTopNavigation } from "./DashboardTopNavigation";
 export function DashboardShell({
   activeNav,
   activeScreen,
+  canClose = false,
   children,
   stats,
   subtitle,
   title,
   hideNavigation = false,
+  onClose,
   onNavigate,
 }: DashboardShellProps) {
   return (
@@ -18,6 +20,8 @@ export function DashboardShell({
         {!hideNavigation ? (
           <DashboardTopNavigation
             activeNav={activeNav}
+            canClose={canClose}
+            onClose={onClose}
             onNavigate={onNavigate}
           />
         ) : null}

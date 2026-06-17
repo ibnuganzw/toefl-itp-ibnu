@@ -14,3 +14,8 @@ src/data/raw/*.json
 qa-artifacts/
 v0-home-redesign-upload/
 v0-home-redesign-upload.zip
+
+# One-off Python inspection / import scripts (kept locally, not part of the app)
+audit_import_fields.py
+inspect_*.py
+phase4_import_bank.py

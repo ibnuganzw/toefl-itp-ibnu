@@ -1,0 +1,28 @@
+{
+  "name": "TOEFL ITP Ibnu Hakim — Latihan & Simulasi",
+  "short_name": "TOEFL ITP",
+  "description": "Latihan dan simulasi TOEFL ITP gratis: Listening, Structure & Written Expression, dan Reading dengan pembahasan lengkap dan estimasi skor.",
+  "lang": "id",
+  "dir": "ltr",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070a12",
+  "theme_color": "#070a12",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "app-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "app-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

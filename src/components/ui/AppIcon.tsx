@@ -8,11 +8,13 @@ export type AppIconName =
   | "calendar"
   | "check"
   | "clock"
+  | "close"
   | "document"
   | "home"
   | "list"
   | "listening"
   | "logo"
+  | "menu"
   | "pause"
   | "play"
   | "reading"
@@ -82,6 +84,7 @@ export function AppIcon({ className = "", name }: { className?: string; name: Ap
         <path d="M12 7v5l3 2" />
       </>
     ),
+    close: <path d="M6 6l12 12M18 6 6 18" />,
     document: (
       <>
         <rect x="5" y="3" width="14" height="18" rx="2.5" />
@@ -98,6 +101,11 @@ export function AppIcon({ className = "", name }: { className?: string; name: Ap
       <>
         <path d="M9 6h11M9 12h11M9 18h11" />
         <path d="M4 6h.01M4 12h.01M4 18h.01" />
+      </>
+    ),
+    menu: (
+      <>
+        <path d="M4 7h16M4 12h16M4 17h16" />
       </>
     ),
     listening: (

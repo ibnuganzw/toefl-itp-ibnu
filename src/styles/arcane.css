@@ -20,6 +20,8 @@
   --arcane-radius-full: 999px;
   --arcane-safe-top: env(safe-area-inset-top, 0px);
   --arcane-safe-bottom: env(safe-area-inset-bottom, 0px);
+  --arcane-safe-left: env(safe-area-inset-left, 0px);
+  --arcane-safe-right: env(safe-area-inset-right, 0px);
   --arcane-z-drawer: 80;
   --arcane-z-modal: 120;
   --arcane-z-toast: 180;
@@ -2854,5 +2856,106 @@
     background: #ffffff !important;
     color: #111827 !important;
     box-shadow: none !important;
+  }
+}
+
+/* App-level crash fallback (AppErrorBoundary). */
+.appErrorBoundary {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  padding: calc(24px + var(--arcane-safe-top)) var(--arcane-page-x)
+    calc(24px + var(--arcane-safe-bottom));
+  background:
+    radial-gradient(circle at 12% 0%, rgb(154 122 241 / 11%), transparent 27%),
+    linear-gradient(180deg, var(--arcane-bg-soft), var(--arcane-bg-deep));
+  color: var(--arcane-text);
+}
+
+.appErrorBoundaryCard {
+  width: min(100%, 460px);
+  border: 1px solid var(--arcane-border-strong);
+  border-radius: var(--arcane-radius-lg);
+  padding: 28px;
+  background: var(--arcane-surface);
+  box-shadow: var(--arcane-shadow-card);
+  text-align: center;
+}
+
+.appErrorBoundaryCard h1 {
+  margin: 0 0 12px;
+  color: var(--arcane-text);
+  font-family: var(--ui-font-display);
+  font-size: 1.3rem;
+}
+
+.appErrorBoundaryCard p {
+  margin: 0 0 12px;
+  color: var(--arcane-text-soft);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.appErrorBoundaryDetail {
+  color: var(--arcane-text-muted);
+  font-family: var(--ui-font-mono);
+  font-size: 0.8rem;
+  word-break: break-word;
+}
+
+.appErrorBoundaryCard button {
+  margin-top: 8px;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid var(--arcane-border-emerald);
+  border-radius: var(--arcane-radius-md);
+  background: rgb(91 214 189 / 12%);
+  color: var(--arcane-text);
+  font-family: var(--ui-font-sans);
+  font-size: 0.95rem;
+  font-weight: 720;
+  cursor: pointer;
+}
+
+.appErrorBoundaryCard button:hover {
+  background: rgb(91 214 189 / 20%);
+}
+
+.appErrorBoundaryCard button:focus-visible {
+  outline: 2px solid var(--arcane-emerald);
+  outline-offset: 2px;
+}
+
+/* Safety net: never allow accidental horizontal scrolling. */
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 760px) {
+  /* Collapse the remaining wide multi-column grids so no fixed min-width
+     column can force horizontal overflow on phones. */
+  .progressIllustrationPanel,
+  .destinationSection--recommendation,
+  .collectionLearningGrid,
+  .progressAnalysisGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Reserve space for the fixed bottom navigation on nav-bearing screens. */
+  .dashboardViewport:is(
+      [data-screen="home"],
+      [data-screen="explore"],
+      [data-screen="collection"],
+      [data-screen="test-space"],
+      [data-screen="progress"]
+    )
+    .dashboardContent {
+    padding-bottom: calc(78px + var(--arcane-safe-bottom));
+  }
+
+  /* Keep transient toasts above the bottom navigation. */
+  .arcane-live-region {
+    bottom: calc(84px + var(--arcane-safe-bottom));
   }
 }

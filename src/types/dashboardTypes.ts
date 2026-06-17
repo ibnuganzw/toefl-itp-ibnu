@@ -16,5 +16,7 @@ export interface DashboardShellProps {
   subtitle: string;
   title: string;
   hideNavigation?: boolean;
+  canClose?: boolean;
+  onClose?: () => void;
   onNavigate: (destination: DashboardNav) => void;
 }

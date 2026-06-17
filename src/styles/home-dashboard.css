@@ -1554,7 +1554,7 @@
 
 .dashboardViewport[data-screen="home"] .dashboardFrame::before {
   z-index: 0;
-  background: url("../assets/home-study-wall.png") center top / cover no-repeat;
+  background: url("../assets/home-study-wall.webp") center top / cover no-repeat;
 }
 
 .dashboardViewport[data-screen="home"] .dashboardFrame::after {
@@ -1582,7 +1582,8 @@
   position: relative;
   width: 52px;
   height: 52px;
-  border-radius: 50%;
+  overflow: hidden;
+  border-radius: 18px;
   border-color: rgb(233 200 120 / 56%);
   background:
     radial-gradient(circle at 50% 45%, rgb(26 158 147 / 28%), transparent 58%),
@@ -1607,6 +1608,10 @@
   height: 31px;
   color: #67e5d7;
   filter: drop-shadow(0 0 7px rgb(91 214 189 / 40%));
+}
+
+.dashboardViewport[data-screen="home"] .appTopBrandLogo::after {
+  display: none;
 }
 
 .dashboardViewport[data-screen="home"] .appTopBrand strong {
@@ -1830,6 +1835,11 @@
 
   .dashboardViewport[data-screen="home"] .appTopBrand {
     justify-content: flex-start;
+  }
+
+  .dashboardViewport[data-screen="home"] .appTopBrandLogo {
+    width: 56px;
+    height: 56px;
   }
 
   .dashboardViewport[data-screen="home"] .appTopBrand small {

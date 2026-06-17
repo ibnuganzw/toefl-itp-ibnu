@@ -60,6 +60,8 @@ function App() {
     [],
   );
   const [screen, setScreen] = useState<Screen>("home");
+  const [dashboardHistory, setDashboardHistory] = useState<DashboardNav[]>([]);
+  const [sessionReturnScreen, setSessionReturnScreen] = useState<DashboardNav>("home");
   const [progress, setProgress] = useState<StoredProgress>(() => loadProgress());
   const [session, setSession] = useState<RuntimeSession | null>(null);
   const [completedSession, setCompletedSession] = useState<RuntimeSession | null>(null);
@@ -74,8 +76,11 @@ function App() {
   const navigateTo = useCallback((destination: DashboardNav = "home") => {
     setNotice("");
     setShowResultReveal(false);
+    if (isDashboardNav(screen) && screen !== destination) {
+      setDashboardHistory((history) => [...history, screen].slice(-8));
+    }
     setScreen(destination);
-  }, []);
+  }, [screen]);
 
   const sessionRefs = useMemo(
     () => (session ? flattenSessionQuestions(session.units) : []),
@@ -96,13 +101,14 @@ function App() {
     }
 
     setSession(runtime);
+    setSessionReturnScreen(returnTargetForScreen(screen, completedSession, sessionReturnScreen));
     setCompletedSession(null);
     setShowShortcuts(false);
     setShowExitConfirmation(false);
     setShowResultReveal(false);
     setNotice("");
     setScreen("session");
-  }, []);
+  }, [completedSession, screen, sessionReturnScreen]);
 
   const handleBlueprintError = useCallback((error: unknown) => {
     if (!isSessionBlueprintUnavailableError(error)) throw error;
@@ -306,10 +312,11 @@ function App() {
       return;
     }
     setSession(restored);
+    setSessionReturnScreen(returnTargetForScreen(screen, completedSession, sessionReturnScreen));
     setCompletedSession(null);
     setNotice("");
     setScreen("session");
-  }, [progress.activeSession]);
+  }, [completedSession, progress.activeSession, screen, sessionReturnScreen]);
 
   const clearStoredSession = useCallback(() => {
     setProgress((current) => ({ ...current, activeSession: undefined }));
@@ -343,8 +350,28 @@ function App() {
     setShowShortcuts(false);
     setShowExitConfirmation(false);
     setNotice(nextNotice);
-    setScreen("home");
-  }, [session]);
+    setScreen(sessionReturnScreen);
+  }, [session, sessionReturnScreen]);
+
+  const closeCurrentScreen = useCallback(() => {
+    setNotice("");
+    setShowResultReveal(false);
+
+    if (screen === "home") return;
+    if (screen === "review") {
+      setScreen("result");
+      return;
+    }
+
+    if (screen === "session") {
+      setShowExitConfirmation(true);
+      return;
+    }
+
+    const target = dashboardHistory.at(-1) ?? "home";
+    setDashboardHistory((history) => history.slice(0, -1));
+    setScreen(target);
+  }, [dashboardHistory, screen]);
 
   const startRetry = useCallback(
     (kind: "wrong" | "doubtful") => {
@@ -477,6 +504,7 @@ function App() {
     content: ReactNode,
     options?: {
       activeNav?: DashboardNav;
+      canClose?: boolean;
       hideNavigation?: boolean;
       stats?: ShellStat[];
     },
@@ -485,9 +513,11 @@ function App() {
       activeNav={options?.activeNav ?? "home"}
       activeScreen={activeScreen}
       hideNavigation={options?.hideNavigation}
+      canClose={options?.canClose ?? activeScreen !== "home"}
       stats={options?.stats ?? []}
       subtitle={subtitle}
       title={title}
+      onClose={closeCurrentScreen}
       onNavigate={navigateTo}
     >
       {content}
@@ -781,6 +811,20 @@ function dashboardNavForSession(runtimeSession: RuntimeSession): DashboardNav {
   }
 
   return runtimeSession.mode === "simulation" ? "test-space" : "explore";
+}
+
+function isDashboardNav(value: DashboardScreen): value is DashboardNav {
+  return value === "home" || value === "explore" || value === "collection" || value === "test-space" || value === "progress";
+}
+
+function returnTargetForScreen(
+  currentScreen: DashboardScreen,
+  completedSession: RuntimeSession | null,
+  fallback: DashboardNav,
+): DashboardNav {
+  if (isDashboardNav(currentScreen)) return currentScreen;
+  if (completedSession) return dashboardNavForSession(completedSession);
+  return fallback;
 }
 
 function updateProgressAfterFinish(progress: StoredProgress, session: RuntimeSession): StoredProgress {
