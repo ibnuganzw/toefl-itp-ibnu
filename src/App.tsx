@@ -448,6 +448,23 @@ function App() {
     window.scrollTo({ left: 0, top: 0 });
   }, [completedSession?.id, screen, session?.id]);
 
+  // Lock the question screens (session & review) to the desktop layout on
+  // small devices by forcing a desktop-width viewport — the browser scales it
+  // to fit, like Chrome's "Request desktop site". The mobile layout for these
+  // exam screens is cramped, so a scaled desktop view reads far better.
+  useEffect(() => {
+    const meta = document.querySelector('meta[name="viewport"]');
+    if (!meta) return;
+    const RESPONSIVE = "width=device-width, initial-scale=1.0, viewport-fit=cover";
+    const DESKTOP = "width=1024, viewport-fit=cover";
+    const isQuestionScreen = screen === "session" || screen === "review";
+    const isSmallDevice = window.screen.width < 961;
+    meta.setAttribute("content", isQuestionScreen && isSmallDevice ? DESKTOP : RESPONSIVE);
+    return () => {
+      meta.setAttribute("content", RESPONSIVE);
+    };
+  }, [screen]);
+
   useLayoutEffect(() => {
     if (!session || screen !== "session") return;
     const activeSession = createStoredSnapshot(session);
