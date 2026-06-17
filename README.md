@@ -36,7 +36,8 @@ Deploy from GitHub so future bank updates can be committed, pushed, and rebuilt 
 
 - Build command: `npm run build`
 - Output directory: `dist`
-- Recommended first domain: a free platform URL such as `toefl-itp-ibnu.vercel.app`
+- First free web URL: `https://ibnuganzw.github.io/toefl-itp-ibnu/`
+- Alternative free platform URL later: `toefl-itp-ibnu.vercel.app`
 - Custom domain can be attached later from the deployment platform dashboard
 
 See `docs/deployment.md`.

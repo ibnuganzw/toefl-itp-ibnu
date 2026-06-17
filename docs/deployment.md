@@ -5,11 +5,34 @@ This app should be deployed from the source repository, not by manually uploadin
 ## Recommended Flow
 
 1. Keep the app source and validated bank files in GitHub.
-2. Import the GitHub repository into Vercel or Netlify.
-3. Use `npm run build` as the build command.
-4. Use `dist` as the production output directory.
-5. Use the free platform domain first, such as `toefl-itp-ibnu.vercel.app`.
-6. Add a custom `.com`, `.xyz`, or `.app` domain later from the deployment platform dashboard.
+2. Publish the current public version with GitHub Pages.
+3. Use the free GitHub Pages URL first: `https://ibnuganzw.github.io/toefl-itp-ibnu/`.
+4. Import the GitHub repository into Vercel or Netlify later if a root-style platform URL is preferred.
+5. Add a custom `.com`, `.xyz`, or `.app` domain later from the deployment platform dashboard.
+
+## GitHub Pages
+
+The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the app to GitHub Pages whenever `main` is pushed.
+
+GitHub Pages uses the repository path `/toefl-itp-ibnu/`, so the workflow builds with:
+
+```bash
+npm run build -- --base=/toefl-itp-ibnu/
+```
+
+Local development, Vercel, and Netlify can still use the normal root build:
+
+```bash
+npm run build
+```
+
+## Vercel or Netlify
+
+If the app is imported into Vercel or Netlify later:
+
+- Build command: `npm run build`
+- Output directory: `dist`
+- Install command: `npm ci`
 
 ## Future Bank Updates
 
