@@ -1,0 +1,58 @@
+{
+  "name": "toefl-itp-ibnu",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:start": "node scripts/startDevServerDetached.mjs",
+    "dev:watchdog": "node scripts/devServerWatchdog.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "qa:design-system": "node scripts/qaDesignSystem.mjs",
+    "qa:listening-experience": "node scripts/qaListeningExperience.mjs",
+    "qa:session-workspace": "node scripts/qaSessionWorkspace.mjs",
+    "qa:session-blueprints": "node scripts/qaSessionBlueprints.mjs",
+    "typecheck": "tsc --noEmit",
+    "validate:bank": "node scripts/validateBank.mjs",
+    "validate:bank:strict": "node scripts/validateBank.mjs --strict",
+    "verify:design-system": "node scripts/verifyDesignSystem.mjs",
+    "verify:destination-pages": "node scripts/verifyDestinationPages.mjs",
+    "verify:home-dashboard": "node scripts/verifyHomeDashboard.mjs",
+    "verify:progress-illustration": "node scripts/verifyProgressIllustration.mjs",
+    "verify:focused-practice": "node scripts/verifyFocusedPractice.mjs",
+    "verify:score-estimation": "node scripts/verifyScoreEstimation.mjs",
+    "verify:history-diagnostics": "node scripts/verifyHistoryDiagnostics.mjs",
+    "verify:result-reveal": "node scripts/verifyResultReveal.mjs",
+    "verify:display-text": "node --experimental-strip-types scripts/verifyDisplayText.mjs",
+    "verify:ui-boundaries": "node scripts/verifyUiBoundaries.mjs",
+    "verify:listening-flow": "node scripts/verifyListeningFlow.mjs",
+    "verify:session-workspace": "node scripts/verifySessionWorkspace.mjs",
+    "verify:session-blueprints": "node scripts/verifySessionBlueprints.mjs",
+    "generate:audio": "node --experimental-strip-types scripts/generate-listening-audio.ts",
+    "inspect:sources": "node scripts/inspectSources.mjs",
+    "import:additional-banks": "node scripts/importAdditionalBanks.mjs",
+    "import:additional-reading-part-2": "node scripts/importAdditionalReadingPart2.mjs",
+    "import:listening-3": "node scripts/importListening3.mjs",
+    "import:additional-premium-sw": "node scripts/importAdditionalPremiumStructureWritten.mjs",
+    "import:premium-sw-explanations": "node scripts/importPremiumStructureWrittenExplanations.mjs",
+    "import:structure-written": "node scripts/importStructureWritten.mjs",
+    "import:reading": "node scripts/importReading.mjs",
+    "relabel:written-markers": "node scripts/relabelWrittenExpressionMarkers.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "mammoth": "^1.9.0",
+    "typescript": "^5.8.0",
+    "vite": "^7.0.0"
+  }
+}

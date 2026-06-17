@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-06-13T03:44:47.222Z",
+  "status": "complete",
+  "sources": [
+    {
+      "label": "Old single-file HTML app",
+      "path": "C:\\Users\\ibnuh\\Downloads\\Test_TOEFL_revisi_FIX_kunci_C.html",
+      "role": "old-html-reference",
+      "parsedSafely": true,
+      "notes": [
+        "Feature and behavior reference only.",
+        "Legacy Simulation A/B labels were not used as final app modes."
+      ]
+    },
+    {
+      "label": "Final Structure and Written Expression document",
+      "path": "C:\\Users\\ibnuh\\Downloads\\Soal TOEFL ITP\\Structure and Written.docx",
+      "role": "structure-written-source",
+      "parsedSafely": true,
+      "detectedCount": 180,
+      "notes": [
+        "Imported from DOCX paragraph blocks using legacy item headings.",
+        "AS/AW/BS/BW labels preserved as metadata/IDs, not fixed simulations."
+      ]
+    },
+    {
+      "label": "Reading Comprehension document",
+      "path": "C:\\Users\\ibnuh\\Downloads\\Soal TOEFL ITP\\Reading Comprehension.docx",
+      "role": "reading-source",
+      "parsedSafely": true,
+      "detectedCount": 120,
+      "notes": [
+        "Imported GNRQ1-GNRQ40, VRQ1-VRQ40, and RQ1-RQ40.",
+        "Reading questions remain nested under their original passage/naskah unit.",
+        "The RQ set uses Naskah headings."
+      ]
+    },
+    {
+      "label": "Additional Listening package 2",
+      "path": "C:\\Users\\ibnuh\\Downloads\\Audio Listening 2\\TOEFL ITP Listening Comprehension Part 2 (1).docx",
+      "role": "other",
+      "parsedSafely": true,
+      "detectedCount": 50,
+      "notes": [
+        "Imported as a second complete 50-question Listening block.",
+        "All 55 supplied MP3 files were copied with unique package-2 names."
+      ]
+    },
+    {
+      "label": "Final revised additional Reading document",
+      "path": "C:\\Users\\ibnuh\\Downloads\\Reading\\Revisi_Final_Reading_Comprehension_TOEFL_Style_Revised_Options_Explanations_clean.docx",
+      "role": "reading-source",
+      "parsedSafely": true,
+      "detectedCount": 72,
+      "notes": [
+        "Imported eight passages with nine questions each.",
+        "Reading questions remain nested under their original passage."
+      ]
+    },
+    {
+      "label": "TOEFL ITP Reading Comprehension 8 Soal Part 2",
+      "path": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Reading Comprehension 8 Soal Part 2.docx",
+      "role": "reading-source",
+      "parsedSafely": true,
+      "detectedCount": 112,
+      "notes": [
+        "Imported 14 passages with 8 questions each.",
+        "Reading questions remain nested under their original passages.",
+        "Source SHA-256: 06e9fe0a50c77475514254b8db140e451331da5cf7f0d0f0541922de647a1ed3"
+      ]
+    },
+    {
+      "label": "TOEFL ITP Reading Comprehension 9 Soal Part 2",
+      "path": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Reading Comprehension 9 Soal Part 2.docx",
+      "role": "reading-source",
+      "parsedSafely": true,
+      "detectedCount": 90,
+      "notes": [
+        "Imported 10 passages with 9 questions each.",
+        "Reading questions remain nested under their original passages.",
+        "Source SHA-256: 94b21f447e8c7eeca701b0c5ac8da59e0d22e6b26b1841ce39acbd15c3520d9a"
+      ]
+    }
+  ],
+  "importedStructureCount": 70,
+  "importedWrittenCount": 110,
+  "importedReadingPassageCount": 47,
+  "importedReadingQuestionCount": 394,
+  "importedListeningSetCount": 70,
+  "importedListeningQuestionCount": 100,
+  "uncertainItems": [],
+  "rejectedItems": [],
+  "notes": [
+    "Question content was extracted from final DOCX source files.",
+    "No source DOCX/HTML/TXT files were modified.",
+    "Additional imports are repeatable through npm run import:additional-banks.",
+    "Run validate:bank and validate:bank:strict after import.",
+    "Additional Reading Part 2 imports are repeatable through npm run import:additional-reading-part-2."
+  ]
+}

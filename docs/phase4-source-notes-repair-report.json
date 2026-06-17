@@ -1,0 +1,345 @@
+{
+  "generatedAt": "2026-06-02T07:46:35.423Z",
+  "mode": "write",
+  "scope": "Targeted Phase 4 sourceNotes label-order repair only.",
+  "changedFields": [
+    {
+      "id": "LS1",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS1.explanation.sourceNotes",
+      "beforeSnippet": "LS1 — Subject–Verb Agreement Pilihan The findings from the recent laboratory study ____ that the new compound affects bacterial growth. Soal A. suggestsB. suggestC. suggestingD. to suggest Jawaban benar: B. suggest Inti pola Kalimat ini menguji subject–verb agreement, yaitu kesesuaian antara subjek ...",
+      "afterSnippet": "LS1 — Subject–Verb Agreement Soal The findings from the recent laboratory study ____ that the new compound affects bacterial growth. Pilihan A. suggestsB. suggestC. suggestingD. to suggest Jawaban benar: B. suggest Inti pola Kalimat ini menguji subject–verb agreement, yaitu kesesuaian antara subjek ...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS2",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS2.explanation.sourceNotes",
+      "beforeSnippet": "LS2 — Appositive Pilihan Marie Curie, ____ of two Nobel Prizes, conducted pioneering research on radioactivity. Soal A. the recipientB. she was the recipientC. was the recipientD. who the recipient Jawaban benar: A. the recipient Inti pola Kalimat ini menguji appositive, yaitu frasa nomina yang memb...",
+      "afterSnippet": "LS2 — Appositive Soal Marie Curie, ____ of two Nobel Prizes, conducted pioneering research on radioactivity. Pilihan A. the recipientB. she was the recipientC. was the recipientD. who the recipient Jawaban benar: A. the recipient Inti pola Kalimat ini menguji appositive, yaitu frasa nomina yang memb...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS3",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS3.explanation.sourceNotes",
+      "beforeSnippet": "LS3 — Passive Voice Pilihan The archived documents ____ in a secure facility to prevent damage from humidity. Soal A. keepB. keepingC. are keptD. kept Jawaban benar: C. are kept Inti pola Kalimat ini menguji passive voice, yaitu struktur ketika subjek menerima aksi. Struktur kalimat Subjeknya adalah...",
+      "afterSnippet": "LS3 — Passive Voice Soal The archived documents ____ in a secure facility to prevent damage from humidity. Pilihan A. keepB. keepingC. are keptD. kept Jawaban benar: C. are kept Inti pola Kalimat ini menguji passive voice, yaitu struktur ketika subjek menerima aksi. Struktur kalimat Subjeknya adalah...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS5",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS5.explanation.sourceNotes",
+      "beforeSnippet": "LS5 — Noun Clause Word Order Pilihan The report explains ____ the sudden decline in rainfall affected crop production. Soal A. howB. how didC. what didD. that how Jawaban benar: A. how Inti pola Kalimat ini menguji embedded question/noun clause, khususnya urutan kata dalam klausa tidak langsung. Str...",
+      "afterSnippet": "LS5 — Noun Clause Word Order Soal The report explains ____ the sudden decline in rainfall affected crop production. Pilihan A. howB. how didC. what didD. that how Jawaban benar: A. how Inti pola Kalimat ini menguji embedded question/noun clause, khususnya urutan kata dalam klausa tidak langsung. Str...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS6",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS6.explanation.sourceNotes",
+      "beforeSnippet": "LS6 — Reduced Passive Relative Clause Pilihan The artifacts ____ during the excavation are now displayed in the national museum. Soal A. discoveringB. discoveredC. were discoveredD. they discovered Jawaban benar: B. discovered Inti pola Soal ini menguji reduced passive relative clause. Struktur kali...",
+      "afterSnippet": "LS6 — Reduced Passive Relative Clause Soal The artifacts ____ during the excavation are now displayed in the national museum. Pilihan A. discoveringB. discoveredC. were discoveredD. they discovered Jawaban benar: B. discovered Inti pola Soal ini menguji reduced passive relative clause. Struktur kali...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS7",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS7.explanation.sourceNotes",
+      "beforeSnippet": "LS7 — Preposition + Gerund Pilihan The committee insisted on ____ the safety procedures before approving the project. Soal A. reviewB. reviewedC. reviewingD. to review Jawaban benar: C. reviewing Inti pola Soal ini menguji pola preposition + gerund. Struktur kalimat Kata on adalah preposition. Jika ...",
+      "afterSnippet": "LS7 — Preposition + Gerund Soal The committee insisted on ____ the safety procedures before approving the project. Pilihan A. reviewB. reviewedC. reviewingD. to review Jawaban benar: C. reviewing Inti pola Soal ini menguji pola preposition + gerund. Struktur kalimat Kata on adalah preposition. Jika ...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS8",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS8.explanation.sourceNotes",
+      "beforeSnippet": "LS8 — Causative Have Pilihan The supervisor had the technicians ____ the equipment before the inspection began. Soal A. calibrateB. to calibrateC. calibratedD. calibrating Jawaban benar: A. calibrate Inti pola Soal ini menguji causative have, yaitu struktur ketika seseorang menyuruh atau mengatur or...",
+      "afterSnippet": "LS8 — Causative Have Soal The supervisor had the technicians ____ the equipment before the inspection began. Pilihan A. calibrateB. to calibrateC. calibratedD. calibrating Jawaban benar: A. calibrate Inti pola Soal ini menguji causative have, yaitu struktur ketika seseorang menyuruh atau mengatur or...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS9",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS9.explanation.sourceNotes",
+      "beforeSnippet": "LS9 — Mandative Subjunctive Pilihan The ethics committee recommended that the experiment ____ postponed until further review. Soal A. isB. wasC. beD. being Jawaban benar: C. be Inti pola Soal ini menguji mandative subjunctive, yaitu pola formal setelah verb seperti recommend, suggest, require, insis...",
+      "afterSnippet": "LS9 — Mandative Subjunctive Soal The ethics committee recommended that the experiment ____ postponed until further review. Pilihan A. isB. wasC. beD. being Jawaban benar: C. be Inti pola Soal ini menguji mandative subjunctive, yaitu pola formal setelah verb seperti recommend, suggest, require, insis...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS10",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS10.explanation.sourceNotes",
+      "beforeSnippet": "LS10 — Inversion after Negative Expression Pilihan Not until the final stage of the trial ____ the full effect of the treatment become clear. Soal A. the researchers didB. did the researchersC. didD. the researchers Jawaban benar: C. did Inti pola Soal ini menguji inversion after negative/limiting e...",
+      "afterSnippet": "LS10 — Inversion after Negative Expression Soal Not until the final stage of the trial ____ the full effect of the treatment become clear. Pilihan A. the researchers didB. did the researchersC. didD. the researchers Jawaban benar: C. did Inti pola Soal ini menguji inversion after negative/limiting e...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS11",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS11.explanation.sourceNotes",
+      "beforeSnippet": "LS11 — Preposition + Relative Pronoun Pilihan The principle ____ the theory is based has been debated for decades. Soal A. whichB. on whichC. whereD. that on Jawaban benar: B. on which Inti pola Soal ini menguji relative clause dengan preposition, terutama pasangan idiomatis be based on. Struktur ka...",
+      "afterSnippet": "LS11 — Preposition + Relative Pronoun Soal The principle ____ the theory is based has been debated for decades. Pilihan A. whichB. on whichC. whereD. that on Jawaban benar: B. on which Inti pola Soal ini menguji relative clause dengan preposition, terutama pasangan idiomatis be based on. Struktur ka...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS12",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS12.explanation.sourceNotes",
+      "beforeSnippet": "LS12 — Parallel Structure Pilihan The training program teaches participants how to collect samples, record observations, and ____ results accurately. Soal A. analysisB. analyzingC. analyzeD. to analyzing Jawaban benar: C. analyze Inti pola Soal ini menguji parallel structure, yaitu kesetaraan bentuk...",
+      "afterSnippet": "LS12 — Parallel Structure Soal The training program teaches participants how to collect samples, record observations, and ____ results accurately. Pilihan A. analysisB. analyzingC. analyzeD. to analyzing Jawaban benar: C. analyze Inti pola Soal ini menguji parallel structure, yaitu kesetaraan bentuk...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS13",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS13.explanation.sourceNotes",
+      "beforeSnippet": "LS13 — Formal Conditional: Were It Not For Pilihan Were it not for the rapid response of local health workers, the outbreak ____ more widely. Soal A. spreadsB. will spreadC. would spreadD. spreading Jawaban benar: C. would spread Inti pola Soal ini menguji conditional formal/hypothetical dengan inve...",
+      "afterSnippet": "LS13 — Formal Conditional: Were It Not For Soal Were it not for the rapid response of local health workers, the outbreak ____ more widely. Pilihan A. spreadsB. will spreadC. would spreadD. spreading Jawaban benar: C. would spread Inti pola Soal ini menguji conditional formal/hypothetical dengan inve...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS14",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS14.explanation.sourceNotes",
+      "beforeSnippet": "LS14 — One of + Plural Noun + Relative Clause Pilihan One of the variables that ____ the accuracy of the model is temperature. Soal A. affectsB. affectC. affectingD. is affected Jawaban benar: B. affect Inti pola Soal ini menguji agreement dalam relative clause pada pola: one of the + plural noun + ...",
+      "afterSnippet": "LS14 — One of + Plural Noun + Relative Clause Soal One of the variables that ____ the accuracy of the model is temperature. Pilihan A. affectsB. affectC. affectingD. is affected Jawaban benar: B. affect Inti pola Soal ini menguji agreement dalam relative clause pada pola: one of the + plural noun + ...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS15",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS15.explanation.sourceNotes",
+      "beforeSnippet": "LS15 — Passive Participial Modifier Pilihan The article, ____ by several independent reviewers, was accepted for publication. Soal A. reviewingB. reviewedC. to reviewD. it reviewed Jawaban benar: B. reviewed Inti pola Soal ini menguji participial modifier, khususnya reduced passive relative clause d...",
+      "afterSnippet": "LS15 — Passive Participial Modifier Soal The article, ____ by several independent reviewers, was accepted for publication. Pilihan A. reviewingB. reviewedC. to reviewD. it reviewed Jawaban benar: B. reviewed Inti pola Soal ini menguji participial modifier, khususnya reduced passive relative clause d...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS16",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS16.explanation.sourceNotes",
+      "beforeSnippet": "LS16 — Modal + Base Verb Pilihan Researchers must ____ several environmental factors before drawing a conclusion. Soal A. considersB. consideredC. considerD. to consider Jawaban benar: C. consider Inti pola Soal ini menguji pola dasar setelah modal. Struktur kalimat Setelah modal seperti must, can, ...",
+      "afterSnippet": "LS16 — Modal + Base Verb Soal Researchers must ____ several environmental factors before drawing a conclusion. Pilihan A. considersB. consideredC. considerD. to consider Jawaban benar: C. consider Inti pola Soal ini menguji pola dasar setelah modal. Struktur kalimat Setelah modal seperti must, can, ...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS17",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS17.explanation.sourceNotes",
+      "beforeSnippet": "LS17 — Uncountable Noun Agreement Pilihan The information collected during the survey ____ useful for future policy decisions. Soal A. areB. wereC. isD. have been Jawaban benar: C. is Inti pola Soal ini menguji agreement pada uncountable noun. Struktur kalimat Subjek utama adalah The information. Ka...",
+      "afterSnippet": "LS17 — Uncountable Noun Agreement Soal The information collected during the survey ____ useful for future policy decisions. Pilihan A. areB. wereC. isD. have been Jawaban benar: C. is Inti pola Soal ini menguji agreement pada uncountable noun. Struktur kalimat Subjek utama adalah The information. Ka...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS18",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS18.explanation.sourceNotes",
+      "beforeSnippet": "LS18 — Adjective Complement: Capable of + V-ing Pilihan The new instrument is capable of ____ extremely small changes in pressure. Soal A. detectB. detectingC. to detectD. detected Jawaban benar: B. detecting Inti pola Soal ini menguji pola adjective + preposition + gerund. Struktur kalimat Pola yan...",
+      "afterSnippet": "LS18 — Adjective Complement: Capable of + V-ing Soal The new instrument is capable of ____ extremely small changes in pressure. Pilihan A. detectB. detectingC. to detectD. detected Jawaban benar: B. detecting Inti pola Soal ini menguji pola adjective + preposition + gerund. Struktur kalimat Pola yan...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS19",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS19.explanation.sourceNotes",
+      "beforeSnippet": "LS19 — Enough + Infinitive Pilihan The sample was large enough ____ the researchers to detect a significant difference. Soal A. forB. soC. thatD. because Jawaban benar: A. for Inti pola Soal ini menguji pola: adjective + enough + for + noun/pronoun + to + verb Struktur kalimat Kalimat ini berarti: S...",
+      "afterSnippet": "LS19 — Enough + Infinitive Soal The sample was large enough ____ the researchers to detect a significant difference. Pilihan A. forB. soC. thatD. because Jawaban benar: A. for Inti pola Soal ini menguji pola: adjective + enough + for + noun/pronoun + to + verb Struktur kalimat Kalimat ini berarti: S...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS20",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS20.explanation.sourceNotes",
+      "beforeSnippet": "LS20 — So + Adjective + That Pilihan The instructions were ____ complex that several participants asked for clarification. Soal A. tooB. soC. veryD. such Jawaban benar: B. so Inti pola Soal ini menguji result clause dengan pola: so + adjective/adverb + that + clause Struktur kalimat Setelah blank ad...",
+      "afterSnippet": "LS20 — So + Adjective + That Soal The instructions were ____ complex that several participants asked for clarification. Pilihan A. tooB. soC. veryD. such Jawaban benar: B. so Inti pola Soal ini menguji result clause dengan pola: so + adjective/adverb + that + clause Struktur kalimat Setelah blank ad...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS21",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS21.explanation.sourceNotes",
+      "beforeSnippet": "LS21 — Such + Noun Phrase + That Pilihan It was ____ a detailed explanation that even beginners could understand the procedure. Soal A. soB. suchC. veryD. too Jawaban benar: B. such Inti pola Soal ini menguji result clause dengan pola: such + a/an + adjective + singular countable noun + that + claus...",
+      "afterSnippet": "LS21 — Such + Noun Phrase + That Soal It was ____ a detailed explanation that even beginners could understand the procedure. Pilihan A. soB. suchC. veryD. too Jawaban benar: B. such Inti pola Soal ini menguji result clause dengan pola: such + a/an + adjective + singular countable noun + that + claus...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS22",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS22.explanation.sourceNotes",
+      "beforeSnippet": "LS22 — Comparative Structure Pilihan The revised method is more reliable ____ the procedure used in the previous study. Soal A. asB. thanC. fromD. to Jawaban benar: B. than Inti pola Soal ini menguji comparative marker. Struktur kalimat Kata more reliable adalah comparative adjective. Comparative de...",
+      "afterSnippet": "LS22 — Comparative Structure Soal The revised method is more reliable ____ the procedure used in the previous study. Pilihan A. asB. thanC. fromD. to Jawaban benar: B. than Inti pola Soal ini menguji comparative marker. Struktur kalimat Kata more reliable adalah comparative adjective. Comparative de...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS23",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS23.explanation.sourceNotes",
+      "beforeSnippet": "LS23 — Correlative Comparative Pilihan The more frequently the samples were tested, ____ the results became. Soal A. the more consistentB. more consistentC. most consistentD. consistently Jawaban benar: A. the more consistent Inti pola Soal ini menguji pola comparative ganda: the more…, the more… St...",
+      "afterSnippet": "LS23 — Correlative Comparative Soal The more frequently the samples were tested, ____ the results became. Pilihan A. the more consistentB. more consistentC. most consistentD. consistently Jawaban benar: A. the more consistent Inti pola Soal ini menguji pola comparative ganda: the more…, the more… St...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS24",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS24.explanation.sourceNotes",
+      "beforeSnippet": "LS24 — In Order To + Base Verb Pilihan The team collected additional samples in order ____ the accuracy of the analysis. Soal A. improveB. improvingC. to improveD. improved Jawaban benar: C. to improve Inti pola Soal ini menguji infinitive of purpose. Struktur kalimat Pola formal untuk menyatakan tu...",
+      "afterSnippet": "LS24 — In Order To + Base Verb Soal The team collected additional samples in order ____ the accuracy of the analysis. Pilihan A. improveB. improvingC. to improveD. improved Jawaban benar: C. to improve Inti pola Soal ini menguji infinitive of purpose. Struktur kalimat Pola formal untuk menyatakan tu...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS25",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS25.explanation.sourceNotes",
+      "beforeSnippet": "LS25 — Unless + Clause Pilihan The results should not be considered conclusive ____ the experiment is repeated under controlled conditions. Soal A. unlessB. despiteC. because ofD. in spite of Jawaban benar: A. unless Inti pola Soal ini menguji adverb clause connector dan perbedaan antara connector k...",
+      "afterSnippet": "LS25 — Unless + Clause Soal The results should not be considered conclusive ____ the experiment is repeated under controlled conditions. Pilihan A. unlessB. despiteC. because ofD. in spite of Jawaban benar: A. unless Inti pola Soal ini menguji adverb clause connector dan perbedaan antara connector k...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS26",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS26.explanation.sourceNotes",
+      "beforeSnippet": "LS26 — Before/After + V-ing Pilihan Before ____ the final version of the report, the editor checked all numerical data. Soal A. submitB. submittedC. submittingD. to submit Jawaban benar: C. submitting Inti pola Soal ini menguji reduced adverbial phrase setelah before. Struktur kalimat Jika setelah b...",
+      "afterSnippet": "LS26 — Before/After + V-ing Soal Before ____ the final version of the report, the editor checked all numerical data. Pilihan A. submitB. submittedC. submittingD. to submit Jawaban benar: C. submitting Inti pola Soal ini menguji reduced adverbial phrase setelah before. Struktur kalimat Jika setelah b...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS27",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS27.explanation.sourceNotes",
+      "beforeSnippet": "LS27 — Make + Object + Base Verb Pilihan The unexpected delay made the research team ____ its schedule. Soal A. reviseB. to reviseC. revisedD. revising Jawaban benar: A. revise Inti pola Soal ini menguji causative make. Struktur kalimat Pola causative make: make + object + base verb Dalam soal: The ...",
+      "afterSnippet": "LS27 — Make + Object + Base Verb Soal The unexpected delay made the research team ____ its schedule. Pilihan A. reviseB. to reviseC. revisedD. revising Jawaban benar: A. revise Inti pola Soal ini menguji causative make. Struktur kalimat Pola causative make: make + object + base verb Dalam soal: The ...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS28",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS28.explanation.sourceNotes",
+      "beforeSnippet": "LS28 — Let + Object + Base Verb Pilihan The software lets users ____ large datasets without installing additional programs. Soal A. analyzeB. to analyzeC. analyzedD. analyzing Jawaban benar: A. analyze Inti pola Soal ini menguji pola causative/permission dengan let. Struktur kalimat Pola let: let + ...",
+      "afterSnippet": "LS28 — Let + Object + Base Verb Soal The software lets users ____ large datasets without installing additional programs. Pilihan A. analyzeB. to analyzeC. analyzedD. analyzing Jawaban benar: A. analyze Inti pola Soal ini menguji pola causative/permission dengan let. Struktur kalimat Pola let: let + ...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS29",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS29.explanation.sourceNotes",
+      "beforeSnippet": "LS29 — Get + Object + Infinitive Pilihan The manager got the staff ____ the files before the auditors arrived. Soal A. organizeB. to organizeC. organizedD. organizing Jawaban benar: B. to organize Inti pola Soal ini menguji causative get, yang berbeda dari make/have/let. Struktur kalimat Untuk objec...",
+      "afterSnippet": "LS29 — Get + Object + Infinitive Soal The manager got the staff ____ the files before the auditors arrived. Pilihan A. organizeB. to organizeC. organizedD. organizing Jawaban benar: B. to organize Inti pola Soal ini menguji causative get, yang berbeda dari make/have/let. Struktur kalimat Untuk objec...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS30",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS30.explanation.sourceNotes",
+      "beforeSnippet": "LS30 — Too + Adjective + To + Passive Infinitive Pilihan The initial measurements were too inconsistent ____ used as reliable evidence. Soal A. beB. beingC. to beD. were Jawaban benar: C. to be Inti pola Soal ini menguji pola: too + adjective + to + verb Karena subjek menerima aksi, infinitive-nya b...",
+      "afterSnippet": "LS30 — Too + Adjective + To + Passive Infinitive Soal The initial measurements were too inconsistent ____ used as reliable evidence. Pilihan A. beB. beingC. to beD. were Jawaban benar: C. to be Inti pola Soal ini menguji pola: too + adjective + to + verb Karena subjek menerima aksi, infinitive-nya b...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS31",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS31.explanation.sourceNotes",
+      "beforeSnippet": "LS31 — Many of Which Pilihan The researcher analyzed more than fifty samples, many of ____ showed signs of contamination. Soal A. themB. whichC. thatD. those Jawaban benar: B. which Inti pola Soal ini menguji nonrestrictive relative clause dengan struktur: quantifier + of + relative pronoun Pola yan...",
+      "afterSnippet": "LS31 — Many of Which Soal The researcher analyzed more than fifty samples, many of ____ showed signs of contamination. Pilihan A. themB. whichC. thatD. those Jawaban benar: B. which Inti pola Soal ini menguji nonrestrictive relative clause dengan struktur: quantifier + of + relative pronoun Pola yan...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS32",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS32.explanation.sourceNotes",
+      "beforeSnippet": "LS32 — Whose Pilihan The scientist ____ discovery changed modern genetics received international recognition. Soal A. whoB. whomC. whoseD. which Jawaban benar: C. whose Inti pola Soal ini menguji possessive relative pronoun, yaitu relative pronoun yang menunjukkan kepemilikan atau hubungan antara or...",
+      "afterSnippet": "LS32 — Whose Soal The scientist ____ discovery changed modern genetics received international recognition. Pilihan A. whoB. whomC. whoseD. which Jawaban benar: C. whose Inti pola Soal ini menguji possessive relative pronoun, yaitu relative pronoun yang menunjukkan kepemilikan atau hubungan antara or...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS33",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS33.explanation.sourceNotes",
+      "beforeSnippet": "LS33 — No Sooner Inversion Pilihan No sooner ____ published the results than other laboratories began testing the same method. Soal A. the journal hadB. had the journalC. the journalD. did the journal had Jawaban benar: B. had the journal Inti pola Soal ini menguji inversion setelah ekspresi negatif...",
+      "afterSnippet": "LS33 — No Sooner Inversion Soal No sooner ____ published the results than other laboratories began testing the same method. Pilihan A. the journal hadB. had the journalC. the journalD. did the journal had Jawaban benar: B. had the journal Inti pola Soal ini menguji inversion setelah ekspresi negatif...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS34",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS34.explanation.sourceNotes",
+      "beforeSnippet": "LS34 — Hardly/Scarcely Inversion Pilihan Hardly ____ the meeting begun when the power went out. Soal A. hadB. didC. wasD. has Jawaban benar: A. had Inti pola Soal ini menguji inversion setelah Hardly di awal kalimat. Pola formalnya: Hardly + had + subject + V3 + when + clause Struktur kalimat Kalima...",
+      "afterSnippet": "LS34 — Hardly/Scarcely Inversion Soal Hardly ____ the meeting begun when the power went out. Pilihan A. hadB. didC. wasD. has Jawaban benar: A. had Inti pola Soal ini menguji inversion setelah Hardly di awal kalimat. Pola formalnya: Hardly + had + subject + V3 + when + clause Struktur kalimat Kalima...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS35",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS35.explanation.sourceNotes",
+      "beforeSnippet": "LS35 — Neither…Nor Agreement Pilihan Neither the principal investigator nor the assistants ____ available after the conference. Soal A. wasB. wereC. has beenD. is Jawaban benar: B. were Inti pola Soal ini menguji subject–verb agreement dalam correlative conjunction neither…nor. Struktur kalimat Dala...",
+      "afterSnippet": "LS35 — Neither…Nor Agreement Soal Neither the principal investigator nor the assistants ____ available after the conference. Pilihan A. wasB. wereC. has beenD. is Jawaban benar: B. were Inti pola Soal ini menguji subject–verb agreement dalam correlative conjunction neither…nor. Struktur kalimat Dala...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS36",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS36.explanation.sourceNotes",
+      "beforeSnippet": "LS36 — Either…Or Agreement Pilihan Either the students or the instructor ____ responsible for submitting the final report. Soal A. areB. wereC. isD. have been Jawaban benar: C. is Inti pola Soal ini menguji subject–verb agreement pada correlative conjunction either…or. Struktur kalimat Dalam pola ei...",
+      "afterSnippet": "LS36 — Either…Or Agreement Soal Either the students or the instructor ____ responsible for submitting the final report. Pilihan A. areB. wereC. isD. have been Jawaban benar: C. is Inti pola Soal ini menguji subject–verb agreement pada correlative conjunction either…or. Struktur kalimat Dalam pola ei...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS37",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS37.explanation.sourceNotes",
+      "beforeSnippet": "LS37 — Because vs Because Of Pilihan The flight was delayed ____ severe weather conditions prevented the plane from landing safely. Soal A. becauseB. because ofC. due toD. despite Jawaban benar: A. because Inti pola Soal ini menguji perbedaan antara because + clause dan because of/due to + noun phra...",
+      "afterSnippet": "LS37 — Because vs Because Of Soal The flight was delayed ____ severe weather conditions prevented the plane from landing safely. Pilihan A. becauseB. because ofC. due toD. despite Jawaban benar: A. because Inti pola Soal ini menguji perbedaan antara because + clause dan because of/due to + noun phra...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS38",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS38.explanation.sourceNotes",
+      "beforeSnippet": "LS38 — Reduced Clause with Enrolled Pilihan The students ____ in the advanced seminar must complete an additional research paper. Soal A. enrollB. enrolledC. enrollingD. they enroll Jawaban benar: B. enrolled Inti pola Soal ini menguji reduced relative clause, tetapi bentuknya agak menjebak karena k...",
+      "afterSnippet": "LS38 — Reduced Clause with Enrolled Soal The students ____ in the advanced seminar must complete an additional research paper. Pilihan A. enrollB. enrolledC. enrollingD. they enroll Jawaban benar: B. enrolled Inti pola Soal ini menguji reduced relative clause, tetapi bentuknya agak menjebak karena k...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS39",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS39.explanation.sourceNotes",
+      "beforeSnippet": "LS39 — Reduced Active Relative Clause Pilihan Researchers ____ the effects of air pollution often rely on long-term observational data. Soal A. studyB. studiedC. studyingD. are studied Jawaban benar: C. studying Inti pola Soal ini menguji reduced active relative clause. Struktur kalimat Kalimat leng...",
+      "afterSnippet": "LS39 — Reduced Active Relative Clause Soal Researchers ____ the effects of air pollution often rely on long-term observational data. Pilihan A. studyB. studiedC. studyingD. are studied Jawaban benar: C. studying Inti pola Soal ini menguji reduced active relative clause. Struktur kalimat Kalimat leng...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LS40",
+      "file": "src/data/imported/structureQuestions.json",
+      "path": "LS40.explanation.sourceNotes",
+      "beforeSnippet": "LS40 — Absolute Phrase Pilihan The final samples having been collected, ____. Soal A. the team began its analysisB. beginning the analysis by the teamC. the samples analyzed the teamD. its analysis beginning the team Jawaban benar: A. the team began its analysis Inti pola Soal ini menguji absolute p...",
+      "afterSnippet": "LS40 — Absolute Phrase Soal The final samples having been collected, ____. Pilihan A. the team began its analysisB. beginning the analysis by the teamC. the samples analyzed the teamD. its analysis beginning the team Jawaban benar: A. the team began its analysis Inti pola Soal ini menguji absolute p...",
+      "reason": "Restored Structure sourceNotes order from Pilihan/question and Soal/options back to Soal/question then Pilihan/options."
+    },
+    {
+      "id": "LW45",
+      "file": "src/data/imported/writtenExpressionQuestions.json",
+      "path": "LW45.explanation.sourceNotes",
+      "beforeSnippet": "LW45 — Correlative Parallelism: Not Only…But Also Inti pola The new policy [A] not only reduces costs [B] but also improving [C] efficiency [D] across departments. Jawaban benar: B Bagian salah: but also improving Perbaikan: but also improves Kalimat benar: The new policy not only reduces costs but ...",
+      "afterSnippet": "LW45 — Correlative Parallelism: Not Only…But Also Soal The new policy [A] not only reduces costs [B] but also improving [C] efficiency [D] across departments. Jawaban benar: B Bagian salah: but also improving Perbaikan: but also improves Kalimat benar: The new policy not only reduces costs but also ...",
+      "reason": "Restored Written sourceNotes labels so Soal, Inti pola, Struktur kalimat, and Catatan cepat match their original block meanings."
+    },
+    {
+      "id": "AW12",
+      "file": "src/data/imported/writtenExpressionQuestions.json",
+      "path": "AW12.explanation.sourceNotes",
+      "beforeSnippet": "27. AW12 — Superlative after One Of Inti pola Mount Everest is [A] one of highest [B] mountains [C] in the world [D]. Jawaban benar: A Bagian salah: one of highest Perbaikan: one of the highest Kalimat benar: Mount Everest is one of the highest mountains in the world. Struktur kalimat Soal ini mengu...",
+      "afterSnippet": "27. AW12 — Superlative after One Of Soal Mount Everest is [A] one of highest [B] mountains [C] in the world [D]. Jawaban benar: A Bagian salah: one of highest Perbaikan: one of the highest Kalimat benar: Mount Everest is one of the highest mountains in the world. Inti pola Soal ini menguji pola supe...",
+      "reason": "Restored Written sourceNotes labels so Soal, Inti pola, Struktur kalimat, and Catatan cepat match their original block meanings."
+    }
+  ],
+  "skippedFields": [],
+  "integrity": {
+    "changedIdFields": 0,
+    "changedCorrectAnswerFields": 0,
+    "changedChoiceFields": 0,
+    "changedQuestionTextFields": 0,
+    "changedReadingPassageTextFields": 0,
+    "changedReadingNesting": 0,
+    "changedNonSourceNotesFields": 0
+  }
+}

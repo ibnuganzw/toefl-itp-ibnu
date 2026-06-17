@@ -1,0 +1,288 @@
+.dashboardFrame {
+  display: block;
+  min-height: 100dvh;
+}
+
+.dashboardFrame:not([data-navigation-hidden="true"]) {
+  overflow: visible;
+}
+
+.dashboardFrame[data-navigation-hidden="true"] {
+  display: block;
+}
+
+.appTopNavigation {
+  position: relative;
+  z-index: 40;
+  display: grid;
+  min-height: 76px;
+  grid-template-columns: minmax(210px, 0.8fr) auto minmax(180px, 0.8fr);
+  gap: var(--ui-space-6);
+  align-items: center;
+  border-bottom: 1px solid var(--arcane-border);
+  padding: 10px clamp(18px, 4vw, 64px);
+  background:
+    radial-gradient(circle at 12% 0%, rgb(154 122 241 / 12%), transparent 30%),
+    linear-gradient(180deg, rgb(12 17 31 / 96%), rgb(8 12 22 / 94%));
+  box-shadow: 0 12px 36px rgb(0 0 0 / 24%);
+  backdrop-filter: blur(18px) saturate(1.08);
+}
+
+.appTopBrand {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  justify-self: start;
+  gap: 10px;
+  border: 0;
+  border-radius: var(--ui-radius-md);
+  padding: 5px 7px;
+  background: transparent;
+  color: var(--arcane-text);
+  text-align: left;
+}
+
+.appTopBrand:hover,
+.appTopBrand:focus-visible {
+  background: rgb(255 255 255 / 5%);
+}
+
+.appTopBrandLogo,
+.appTopBrandLogo .uiIcon {
+  width: 42px;
+  height: 42px;
+}
+
+.appTopBrandLogo {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--arcane-border-gold);
+  border-radius: 13px;
+  background:
+    radial-gradient(circle at 30% 15%, rgb(233 200 120 / 20%), transparent 38%),
+    linear-gradient(145deg, rgb(30 25 48 / 95%), rgb(13 21 34 / 98%));
+  color: var(--arcane-gold);
+  box-shadow: var(--arcane-glow-gold);
+}
+
+.appTopBrandLogo .uiIcon {
+  width: 27px;
+  height: 27px;
+  stroke-width: 1.6;
+}
+
+.appTopBrand > span:last-child {
+  display: grid;
+  min-width: 0;
+  gap: 1px;
+}
+
+.appTopBrand strong {
+  color: var(--arcane-text);
+  font-size: 0.94rem;
+  letter-spacing: 0.02em;
+}
+
+.appTopBrand small {
+  color: var(--arcane-text-muted);
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
+.appNavigation {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.appNavItem {
+  position: relative;
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  border-radius: var(--ui-radius-md);
+  padding: 9px 12px;
+  background: transparent;
+  color: var(--arcane-text-muted);
+  font-family: var(--ui-font-sans);
+  font-size: 0.78rem;
+  font-weight: 720;
+  white-space: nowrap;
+}
+
+.appNavItem::after {
+  position: absolute;
+  right: 12px;
+  bottom: 3px;
+  left: 12px;
+  height: 2px;
+  border-radius: var(--ui-radius-pill);
+  background: linear-gradient(90deg, var(--arcane-emerald), var(--arcane-gold));
+  box-shadow: 0 0 14px rgb(91 214 189 / 34%);
+  content: "";
+  opacity: 0;
+  transform: scaleX(0.45);
+  transition:
+    opacity var(--ui-duration-fast) var(--ui-ease-standard),
+    transform var(--ui-duration-fast) var(--ui-ease-standard);
+}
+
+.appNavItem:hover {
+  background: rgb(255 255 255 / 5%);
+  color: var(--arcane-text);
+}
+
+.appNavItem.isActive {
+  border: 1px solid var(--arcane-border-emerald);
+  background:
+    radial-gradient(circle at 50% 0%, rgb(91 214 189 / 12%), transparent 60%),
+    rgb(91 214 189 / 7%);
+  color: var(--arcane-text);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+}
+
+.appNavItem.isActive::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.appNavItem:focus-visible,
+.appTopBrand:focus-visible {
+  outline: 2px solid var(--arcane-emerald);
+  outline-offset: 2px;
+  box-shadow: var(--arcane-focus);
+}
+
+.appNavIcon {
+  display: grid;
+  width: 19px;
+  height: 19px;
+  place-items: center;
+}
+
+.appNavIcon .uiIcon {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+}
+
+.appNavLabel--mobile {
+  display: none;
+}
+
+.appTopTrust {
+  display: inline-flex;
+  align-items: center;
+  justify-self: end;
+  gap: 6px;
+  border: 1px solid var(--arcane-border-emerald);
+  border-radius: var(--ui-radius-pill);
+  padding: 7px 10px;
+  background: rgb(91 214 189 / 8%);
+  color: var(--arcane-emerald);
+  font-size: 0.68rem;
+  font-weight: 740;
+  white-space: nowrap;
+}
+
+.appTopTrust .uiIcon {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 1080px) {
+  .appTopNavigation {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: var(--ui-space-3);
+    padding-inline: 16px;
+  }
+
+  .appTopTrust {
+    display: none;
+  }
+
+  .appNavigation {
+    justify-content: flex-end;
+  }
+
+  .appTopBrand small {
+    display: none;
+  }
+
+  .appNavItem {
+    padding-inline: 9px;
+  }
+}
+
+@media (max-width: 760px) {
+  .appTopNavigation {
+    display: grid;
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 5px;
+    padding: 7px 8px 0;
+  }
+
+  .appTopBrand {
+    width: 100%;
+    justify-content: center;
+    padding-block: 2px;
+  }
+
+  .appTopBrandLogo,
+  .appTopBrandLogo .uiIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .appTopBrand strong {
+    font-size: 0.78rem;
+  }
+
+  .appNavigation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    justify-content: stretch;
+    gap: 2px;
+  }
+
+  .appNavItem {
+    min-height: 42px;
+    display: grid;
+    min-width: 0;
+    grid-template-rows: 16px auto;
+    justify-items: center;
+    gap: 4px;
+    border-radius: var(--ui-radius-sm) var(--ui-radius-sm) 0 0;
+    padding: 8px 9px 10px;
+    font-size: 0.6rem;
+  }
+
+  .appNavItem::after {
+    right: 8px;
+    bottom: 2px;
+    left: 8px;
+  }
+
+  .appNavIcon,
+  .appNavIcon .uiIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .appNavLabel--desktop {
+    display: none;
+  }
+
+  .appNavLabel--mobile {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

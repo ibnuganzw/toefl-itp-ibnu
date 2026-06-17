@@ -1,0 +1,36 @@
+{
+  "id": "written-example-id",
+  "sourceId": "optional-source-id",
+  "legacyId": "LW1",
+  "section": "written-expression",
+  "active": false,
+  "difficulty": "unknown",
+  "grammarPattern": "Agreement",
+  "errorFocus": "Preserve the source error-focus label.",
+  "incorrectPart": "Preserve the incorrect source segment.",
+  "correction": "Preserve the corrected form.",
+  "correctedSentence": "Preserve the complete corrected sentence.",
+  "questionText": "Preserve the original Written Expression sentence exactly.",
+  "choices": {
+    "A": "underlined segment A",
+    "B": "underlined segment B",
+    "C": "underlined segment C",
+    "D": "underlined segment D"
+  },
+  "correctAnswer": "A",
+  "sentenceStructureExplanation": "Preserve the original source explanation here.",
+  "explanation": {
+    "summary": "Preserve the original source summary here.",
+    "reasoning": "Preserve the source reasoning or cara membaca kalimat here.",
+    "whyCorrect": "Preserve why the selected error is the correct answer.",
+    "optionAnalysis": {
+      "A": "Preserve option A analysis.",
+      "B": "Preserve option B analysis.",
+      "C": "Preserve option C analysis.",
+      "D": "Preserve option D analysis."
+    },
+    "toeflTrap": "Preserve TOEFL trap notes.",
+    "quickNote": "Preserve quick note."
+  },
+  "tags": []
+}

@@ -1,0 +1,778 @@
+/* Reference-led session workspace. Keep this last so old session rules cannot reshape it. */
+
+.dashboardViewport[data-screen="session"] {
+  --session-font: "Segoe UI Variable Text", "Segoe UI Variable", Inter, "IBM Plex Sans", Arial, sans-serif;
+  --session-panel: rgb(15 25 43 / 92%);
+  --session-panel-deep: rgb(8 17 31 / 94%);
+  --session-panel-soft: rgb(24 34 57 / 78%);
+  --session-line: rgb(139 157 188 / 25%);
+  --session-line-strong: rgb(158 177 210 / 42%);
+  --session-violet: #a786ff;
+  --session-violet-line: rgb(167 134 255 / 64%);
+  --session-emerald: #65d8c1;
+  --session-emerald-deep: #176b5b;
+  --session-crimson: #f07f95;
+  --session-crimson-deep: #8b3549;
+  --session-gold: #f0c95d;
+  --session-text: #f1f3f7;
+  --session-text-soft: #d0d7e4;
+  --session-text-muted: #9ca8bb;
+  font-family: var(--session-font);
+}
+
+.dashboardViewport[data-screen="session"] :is(button, input, select, textarea) {
+  font-family: var(--session-font);
+}
+
+.dashboardViewport[data-screen="session"] .dashboardMain {
+  background:
+    radial-gradient(circle at 12% 8%, rgb(69 97 150 / 10%), transparent 30%),
+    radial-gradient(circle at 86% 18%, rgb(78 65 156 / 9%), transparent 28%),
+    linear-gradient(180deg, #07101e 0%, #081323 52%, #06101d 100%);
+}
+
+.dashboardViewport[data-screen="session"] .dashboardMain::before {
+  background:
+    linear-gradient(rgb(141 160 191 / 2%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(141 160 191 / 1.8%) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+}
+
+.dashboardViewport[data-screen="session"] .dashboardTopbar {
+  border-bottom: 1px solid rgb(119 140 176 / 18%);
+  background:
+    radial-gradient(circle at 8% 0%, rgb(79 100 148 / 10%), transparent 34%),
+    linear-gradient(100deg, rgb(15 27 47 / 98%), rgb(7 17 31 / 98%));
+  box-shadow: 0 12px 32px rgb(0 0 0 / 20%);
+}
+
+.dashboardViewport[data-screen="session"] .dashboardTitle h1 {
+  color: var(--session-text);
+  font-family: var(--session-font);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.dashboardViewport[data-screen="session"] .dashboardTitle p:not(.eyebrow) {
+  color: var(--session-text-muted);
+  font-weight: 450;
+}
+
+.dashboardViewport[data-screen="session"] .dashboardTopStat {
+  border-color: rgb(125 148 184 / 24%);
+  border-radius: 10px;
+  background: rgb(10 22 39 / 58%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 2.5%);
+}
+
+.dashboardViewport[data-screen="session"] .dashboardTopStat span {
+  color: var(--session-text-muted);
+  font-weight: 500;
+}
+
+.dashboardViewport[data-screen="session"] .dashboardTopStat strong {
+  color: var(--session-text);
+  font-weight: 650;
+}
+
+.dashboardViewport[data-screen="session"] .arcane-learning-shell {
+  font-family: var(--session-font);
+}
+
+.dashboardViewport[data-screen="session"] .arcane-learning-shell :is(h1, h2, h3, strong) {
+  font-family: var(--session-font);
+}
+
+.dashboardViewport[data-screen="session"] .arcane-learning-shell .eyebrow,
+.dashboardViewport[data-screen="session"] .arcane-learning-shell .mapGroupTitle {
+  color: var(--session-gold);
+  font-family: var(--session-font);
+  font-weight: 720;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.dashboardViewport[data-screen="session"] :is(
+  .sessionQuestionLead,
+  .sessionCommandBar,
+  .questionMap,
+  .questionPanel,
+  .passagePanel,
+  .listeningPanel,
+  .sessionBottomBar
+) {
+  border: 1px solid var(--session-line);
+  border-radius: 3px;
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 2.8%), transparent 28%),
+    radial-gradient(circle at 100% 0%, rgb(69 90 137 / 7%), transparent 30%),
+    var(--session-panel);
+  box-shadow:
+    0 14px 32px rgb(0 0 0 / 17%),
+    inset 0 1px 0 rgb(255 255 255 / 2.8%);
+}
+
+.dashboardViewport[data-screen="session"] :is(
+  .sessionQuestionLead,
+  .sessionCommandBar,
+  .questionMap,
+  .questionPanel,
+  .passagePanel,
+  .listeningPanel,
+  .sessionBottomBar
+)::after {
+  position: absolute;
+  top: -1px;
+  right: 20px;
+  left: 20px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(158 177 210 / 30%), transparent);
+  content: "";
+  pointer-events: none;
+}
+
+.dashboardViewport[data-screen="session"] .sessionQuestionLead,
+.dashboardViewport[data-screen="session"] .questionMap,
+.dashboardViewport[data-screen="session"] .questionPanel,
+.dashboardViewport[data-screen="session"] .passagePanel,
+.dashboardViewport[data-screen="session"] .listeningPanel,
+.dashboardViewport[data-screen="session"] .sessionCommandBar,
+.dashboardViewport[data-screen="session"] .sessionBottomBar {
+  position: relative;
+}
+
+.dashboardViewport[data-screen="session"] :is(.questionMap, .questionPanel, .passagePanel, .listeningPanel) {
+  top: auto;
+}
+
+.dashboardViewport[data-screen="session"] .sessionQuestionLead,
+.dashboardViewport[data-screen="session"] .questionPanel,
+.dashboardViewport[data-screen="session"] .questionMap,
+.dashboardViewport[data-screen="session"] .sessionBottomBar {
+  border-color: rgb(139 121 212 / 34%);
+}
+
+.dashboardViewport[data-screen="session"] .sessionQuestionLead,
+.dashboardViewport[data-screen="session"] .questionPanel {
+  box-shadow:
+    inset 2px 0 0 rgb(157 126 240 / 62%),
+    0 14px 32px rgb(0 0 0 / 17%),
+    inset 0 1px 0 rgb(255 255 255 / 2.8%);
+}
+
+.dashboardViewport[data-screen="session"] .passagePanel {
+  border-color: rgb(101 216 193 / 42%);
+  box-shadow:
+    inset 2px 0 0 rgb(101 216 193 / 72%),
+    0 14px 32px rgb(0 0 0 / 17%),
+    inset 0 1px 0 rgb(255 255 255 / 2.8%);
+}
+
+.dashboardViewport[data-screen="session"] .sessionCommandBar {
+  background: rgb(7 16 30 / 82%);
+  backdrop-filter: blur(12px);
+}
+
+.dashboardViewport[data-screen="session"] .questionHeader {
+  border-bottom-color: var(--session-line);
+}
+
+.dashboardViewport[data-screen="session"] .questionHeader h2 {
+  color: var(--session-text);
+  font-weight: 620;
+  letter-spacing: -0.015em;
+}
+
+.dashboardViewport[data-screen="session"] .questionText {
+  color: var(--session-text);
+  font-weight: 600;
+  letter-spacing: -0.018em;
+}
+
+.dashboardViewport[data-screen="session"] .sessionQuestionLead h2 {
+  color: var(--session-text);
+  font-weight: 620;
+  letter-spacing: -0.022em;
+}
+
+.dashboardViewport[data-screen="session"] .sessionQuestionLead > span {
+  color: var(--session-text-soft);
+  font-weight: 550;
+}
+
+.dashboardViewport[data-screen="session"] .choiceList {
+  gap: 11px;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton {
+  position: relative;
+  border: 1px solid var(--session-line-strong);
+  border-radius: 2px;
+  background:
+    linear-gradient(90deg, rgb(71 78 110 / 17%), transparent 42%),
+    var(--session-panel-soft);
+  color: var(--session-text-soft);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 2.5%);
+  overflow: visible;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton::before,
+.dashboardViewport[data-screen="session"] .choiceButton::after {
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--session-line-strong);
+  background: #101b2e;
+  content: "";
+  pointer-events: none;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton::before {
+  left: -4px;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton::after {
+  right: -4px;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton:hover:not(:disabled) {
+  border-color: var(--session-violet-line);
+  background:
+    linear-gradient(90deg, rgb(127 100 210 / 14%), transparent 44%),
+    rgb(28 37 62 / 88%);
+  box-shadow: 0 0 24px rgb(132 102 224 / 10%);
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton .arcane-answer-letter {
+  border: 1px solid rgb(147 164 194 / 42%);
+  border-radius: 0;
+  background: rgb(9 19 35 / 78%);
+  color: var(--session-text);
+  font-weight: 650;
+  clip-path: polygon(
+    8px 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    0 calc(100% - 8px),
+    0 8px
+  );
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton .arcane-answer-text {
+  color: var(--session-text);
+  font-weight: 520;
+  letter-spacing: -0.008em;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isSelected {
+  border-color: var(--session-violet-line);
+  background:
+    linear-gradient(90deg, rgb(128 94 218 / 18%), transparent 52%),
+    rgb(29 37 64 / 92%);
+  box-shadow: inset 3px 0 0 var(--session-violet), 0 0 24px rgb(132 102 224 / 13%);
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isSelected .arcane-answer-letter {
+  border-color: var(--session-violet);
+  background: #5f45a8;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isCorrectChoice {
+  border-color: rgb(101 216 193 / 76%);
+  background:
+    linear-gradient(90deg, rgb(35 155 130 / 24%), transparent 54%),
+    rgb(16 49 52 / 94%);
+  box-shadow: inset 3px 0 0 var(--session-emerald), 0 0 26px rgb(101 216 193 / 16%);
+  opacity: 1;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isCorrectChoice::before,
+.dashboardViewport[data-screen="session"] .choiceButton.isCorrectChoice::after {
+  border-color: rgb(101 216 193 / 76%);
+  background: var(--session-emerald-deep);
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isCorrectChoice .arcane-answer-letter {
+  border-color: var(--session-emerald);
+  background: var(--session-emerald-deep);
+  color: #ffffff;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isCorrectChoice .arcane-answer-text {
+  color: #e8fff9;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isWrongChoice {
+  border-color: rgb(240 127 149 / 76%);
+  background:
+    linear-gradient(90deg, rgb(171 55 82 / 25%), transparent 54%),
+    rgb(54 24 39 / 94%);
+  box-shadow: inset 3px 0 0 var(--session-crimson), 0 0 26px rgb(240 127 149 / 15%);
+  opacity: 1;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isWrongChoice::before,
+.dashboardViewport[data-screen="session"] .choiceButton.isWrongChoice::after {
+  border-color: rgb(240 127 149 / 76%);
+  background: var(--session-crimson-deep);
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isWrongChoice .arcane-answer-letter {
+  border-color: var(--session-crimson);
+  background: var(--session-crimson-deep);
+  color: #ffffff;
+}
+
+.dashboardViewport[data-screen="session"] .choiceButton.isWrongChoice .arcane-answer-text {
+  color: #fff0f3;
+}
+
+.dashboardViewport[data-screen="session"] .inlineActions .uiButton {
+  border-color: rgb(218 177 68 / 42%);
+  border-radius: 999px;
+  background: rgb(218 177 68 / 5%);
+  color: var(--session-gold);
+  font-weight: 580;
+}
+
+.dashboardViewport[data-screen="session"] .mapHeader {
+  border-bottom-color: var(--session-line);
+}
+
+.dashboardViewport[data-screen="session"] .mapHeader strong {
+  color: var(--session-text);
+  font-weight: 620;
+}
+
+.dashboardViewport[data-screen="session"] .mapHeader span {
+  border-color: var(--session-line);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 3%);
+  color: var(--session-text-soft);
+  font-weight: 500;
+}
+
+.dashboardViewport[data-screen="session"] .mapButton {
+  border-color: rgb(135 154 186 / 28%);
+  border-radius: 7px;
+  background: rgb(255 255 255 / 2.4%);
+  color: var(--session-text-soft);
+  font-weight: 520;
+}
+
+.dashboardViewport[data-screen="session"] .mapButton.current {
+  border-color: var(--session-gold);
+  background: rgb(240 201 93 / 9%);
+  color: var(--session-text);
+  box-shadow: 0 0 20px rgb(240 201 93 / 10%);
+}
+
+.dashboardViewport[data-screen="session"] .mapButton.correct {
+  border-color: rgb(101 216 193 / 74%);
+  background: rgb(23 107 91 / 78%);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgb(101 216 193 / 25%), 0 0 18px rgb(101 216 193 / 14%);
+}
+
+.dashboardViewport[data-screen="session"] .mapButton.wrong {
+  border-color: rgb(240 127 149 / 76%);
+  background: rgb(139 53 73 / 78%);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgb(240 127 149 / 24%), 0 0 18px rgb(240 127 149 / 13%);
+}
+
+.dashboardViewport[data-screen="session"] .passagePanel h2 {
+  color: var(--session-text);
+  font-weight: 620;
+  letter-spacing: -0.018em;
+}
+
+.dashboardViewport[data-screen="session"] .passageText,
+.dashboardViewport[data-screen="session"] .passageText p {
+  color: var(--session-text-soft);
+  font-weight: 430;
+}
+
+.dashboardViewport[data-screen="session"] .passageText {
+  scrollbar-color: rgb(117 142 179 / 68%) transparent;
+}
+
+.dashboardViewport[data-screen="session"] .passageText::-webkit-scrollbar,
+.dashboardViewport[data-screen="session"] .mapGroups::-webkit-scrollbar,
+.dashboardViewport[data-screen="session"] .questionPanel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboardViewport[data-screen="session"] .passageText::-webkit-scrollbar-thumb,
+.dashboardViewport[data-screen="session"] .mapGroups::-webkit-scrollbar-thumb,
+.dashboardViewport[data-screen="session"] .questionPanel::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgb(117 142 179 / 62%);
+}
+
+.dashboardViewport[data-screen="session"] .uiButton {
+  border-radius: 7px;
+  font-weight: 560;
+}
+
+.dashboardViewport[data-screen="session"] .sessionCommandBar .uiButton,
+.dashboardViewport[data-screen="session"] .sessionBottomBar .uiButton {
+  border-color: rgb(129 149 183 / 28%);
+  background: rgb(18 29 49 / 72%);
+  color: var(--session-text-soft);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 2.5%);
+}
+
+.dashboardViewport[data-screen="session"] .sessionCommandBar .uiButton--warning {
+  border-color: rgb(240 201 93 / 44%);
+  color: var(--session-gold);
+}
+
+.dashboardViewport[data-screen="session"] .sessionCommandBar .uiButton--primary,
+.dashboardViewport[data-screen="session"] .sessionBottomBar .uiButton--primary {
+  border-color: rgb(167 134 255 / 74%);
+  background: linear-gradient(180deg, #6045a9, #443078);
+  color: #ffffff;
+  box-shadow: 0 0 24px rgb(131 96 230 / 18%), inset 0 1px 0 rgb(255 255 255 / 10%);
+}
+
+.dashboardViewport[data-screen="session"] .sessionBottomBar > span {
+  color: var(--session-text-soft);
+  font-weight: 500;
+}
+
+.dashboardViewport[data-screen="session"] .writtenMarkedSegment {
+  border-color: rgb(167 134 255 / 36%);
+  background: rgb(134 99 220 / 10%);
+}
+
+.dashboardViewport[data-screen="session"] .writtenMarker,
+.dashboardViewport[data-screen="session"] .readingTargetTerm {
+  color: var(--session-violet);
+}
+
+@media (min-width: 961px) {
+  .dashboardViewport[data-screen="session"] .dashboardTopbar {
+    min-height: 80px;
+    padding: 13px 20px 13px 30px;
+  }
+
+  .dashboardViewport[data-screen="session"] .dashboardTitle h1 {
+    font-size: clamp(1.45rem, 1.8vw, 1.82rem);
+  }
+
+  .dashboardViewport[data-screen="session"] .dashboardTitle p:not(.eyebrow) {
+    margin-top: 4px;
+    font-size: 0.88rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .dashboardTopStats {
+    gap: 10px;
+  }
+
+  .dashboardViewport[data-screen="session"] .dashboardTopStat {
+    min-width: 118px;
+    min-height: 56px;
+    padding: 10px 13px;
+  }
+
+  .dashboardViewport[data-screen="session"] .dashboardTopStat span {
+    font-size: 0.72rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .dashboardTopStat strong {
+    margin-top: 4px;
+    font-size: 1rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .dashboardContent {
+    padding: 14px 20px 18px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionDashboardShell {
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionDashboardShell[data-session-layout="reading"] {
+    grid-template-rows: auto minmax(0, 1fr) auto;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionQuestionLead {
+    min-height: 98px;
+    padding: 18px 30px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionQuestionLead .eyebrow {
+    margin-bottom: 8px;
+    font-size: 0.7rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionQuestionLead h2 {
+    font-size: clamp(1.3rem, 1.65vw, 1.68rem);
+    line-height: 1.52;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionQuestionLead > span {
+    font-size: 0.85rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionCommandBar {
+    min-height: 58px;
+    gap: 10px;
+    padding: 7px 9px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionCommandBar .uiButton {
+    min-height: 44px;
+    padding-inline: 18px;
+    font-size: 0.9rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionLayout {
+    grid-template-columns: minmax(280px, 318px) minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .dashboardViewport[data-screen="session"] .questionMap {
+    padding: 20px 20px 16px;
+  }
+
+  .dashboardViewport[data-screen="session"] .mapHeader {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+
+  .dashboardViewport[data-screen="session"] .mapHeader strong {
+    font-size: 1.08rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .mapHeader span {
+    padding: 5px 9px;
+    font-size: 0.72rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .mapGroups {
+    gap: 17px;
+    padding-right: 7px;
+  }
+
+  .dashboardViewport[data-screen="session"] .mapGroupTitle {
+    margin-bottom: 9px;
+    font-size: 0.7rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .mapButtons {
+    grid-template-columns: repeat(auto-fill, 42px);
+    gap: 8px;
+  }
+
+  .dashboardViewport[data-screen="session"] .mapButton {
+    width: 42px;
+    min-width: 42px;
+    font-size: 0.83rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .readingWorkspace {
+    grid-template-columns: minmax(390px, 0.94fr) minmax(480px, 1.06fr);
+    gap: 14px;
+  }
+
+  .dashboardViewport[data-screen="session"] .questionPanel,
+  .dashboardViewport[data-screen="session"] .passagePanel,
+  .dashboardViewport[data-screen="session"] .listeningPanel {
+    padding: 24px 28px;
+  }
+
+  .dashboardViewport[data-screen="session"] .passagePanel {
+    grid-template-rows: auto auto minmax(0, 1fr);
+  }
+
+  .dashboardViewport[data-screen="session"] .passagePanel .eyebrow {
+    margin-bottom: 12px;
+    font-size: 0.72rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .passagePanel h2 {
+    margin-bottom: 14px;
+    font-size: clamp(1.15rem, 1.35vw, 1.38rem);
+    line-height: 1.38;
+  }
+
+  .dashboardViewport[data-screen="session"] .passageText {
+    padding-right: 13px;
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+
+  .dashboardViewport[data-screen="session"] .passageText p {
+    margin-bottom: 18px;
+  }
+
+  .dashboardViewport[data-screen="session"] .questionHeader {
+    padding-bottom: 14px;
+  }
+
+  .dashboardViewport[data-screen="session"] .singleWorkspace .questionHeader {
+    border-bottom: 0;
+    padding-bottom: 9px;
+  }
+
+  .dashboardViewport[data-screen="session"] .questionHeader .eyebrow {
+    margin-bottom: 7px;
+    font-size: 0.72rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .questionPanel h2 {
+    font-size: 1.15rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .questionText {
+    margin: 18px 0 16px;
+    font-size: clamp(1.05rem, 1.3vw, 1.32rem);
+    line-height: 1.5;
+  }
+
+  .dashboardViewport[data-screen="session"] .choiceButton {
+    min-height: 64px;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 16px;
+    padding: 9px 18px 9px 13px;
+  }
+
+  .dashboardViewport[data-screen="session"] .choiceButton .arcane-answer-letter {
+    width: 42px;
+    height: 42px;
+    font-size: 0.9rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .choiceButton .arcane-answer-text {
+    font-size: 1rem;
+    line-height: 1.42;
+  }
+
+  .dashboardViewport[data-screen="session"] .inlineActions {
+    margin-top: 18px;
+  }
+
+  .dashboardViewport[data-screen="session"] .inlineActions .uiButton {
+    min-height: 44px;
+    padding-inline: 20px;
+    font-size: 0.88rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionBottomBar {
+    min-height: 66px;
+    padding: 8px 16px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionBottomBar .uiButton {
+    min-height: 46px;
+    padding-inline: 22px;
+    font-size: 0.9rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionBottomBar > span {
+    font-size: 0.88rem;
+  }
+}
+
+@media (min-width: 961px) and (max-height: 780px) {
+  .dashboardViewport[data-screen="session"] .dashboardTopbar {
+    min-height: 68px;
+    padding-block: 9px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionDashboardShell {
+    gap: 8px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionQuestionLead {
+    min-height: 78px;
+    padding-block: 11px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionCommandBar {
+    min-height: 48px;
+    padding-block: 4px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionCommandBar .uiButton {
+    min-height: 38px;
+  }
+
+  .dashboardViewport[data-screen="session"] .questionPanel,
+  .dashboardViewport[data-screen="session"] .passagePanel,
+  .dashboardViewport[data-screen="session"] .listeningPanel {
+    padding: 17px 20px;
+  }
+
+  .dashboardViewport[data-screen="session"] .choiceList {
+    gap: 7px;
+  }
+
+  .dashboardViewport[data-screen="session"] .choiceButton {
+    min-height: 48px;
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 11px;
+    padding-block: 5px;
+  }
+
+  .dashboardViewport[data-screen="session"] .choiceButton .arcane-answer-letter {
+    width: 32px;
+    height: 32px;
+  }
+
+  .dashboardViewport[data-screen="session"] .inlineActions {
+    margin-top: 9px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionBottomBar {
+    min-height: 50px;
+    padding-block: 4px;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionBottomBar .uiButton {
+    min-height: 38px;
+  }
+}
+
+@media (max-width: 960px) {
+  .dashboardViewport[data-screen="session"] .dashboardTitle h1 {
+    font-size: 1.32rem;
+  }
+
+  .dashboardViewport[data-screen="session"] .questionPanel,
+  .dashboardViewport[data-screen="session"] .passagePanel,
+  .dashboardViewport[data-screen="session"] .questionMap {
+    padding: 18px;
+  }
+
+  .dashboardViewport[data-screen="session"] .choiceButton {
+    min-height: 56px;
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 11px;
+    padding: 8px 11px;
+  }
+
+  .dashboardViewport[data-screen="session"] .choiceButton .arcane-answer-letter {
+    width: 34px;
+    height: 34px;
+  }
+
+  .dashboardViewport[data-screen="session"] .choiceButton .arcane-answer-text {
+    font-size: 0.92rem;
+    line-height: 1.42;
+  }
+
+  .dashboardViewport[data-screen="session"] .passagePanel {
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr);
+  }
+}

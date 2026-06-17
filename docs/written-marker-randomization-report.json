@@ -1,0 +1,644 @@
+{
+  "generatedAt": "2026-06-14T00:20:24.650Z",
+  "mode": "write",
+  "scope": "Written Expression marker relabeling only.",
+  "policy": {
+    "existingMixedOrderQuestionsReworked": true,
+    "standardAnswerAQuestionsLeftUnchanged": true,
+    "mixedOrderFirstMarkerCorrectTargetRatio": "1:1",
+    "questionAndCorrectionContentChanged": false
+  },
+  "before": {
+    "totalQuestions": 215,
+    "standardOrderQuestions": 166,
+    "mixedOrderQuestions": 49,
+    "mixedFirstMarkerCorrect": 34,
+    "mixedFirstMarkerNotCorrect": 15
+  },
+  "after": {
+    "totalQuestions": 215,
+    "standardOrderQuestions": 147,
+    "mixedOrderQuestions": 68,
+    "mixedFirstMarkerCorrect": 34,
+    "mixedFirstMarkerNotCorrect": 34
+  },
+  "summary": {
+    "changedQuestions": 68,
+    "reworkedExistingMixedOrder": 49,
+    "addedMixedOrderDecoys": 19
+  },
+  "changes": [
+    {
+      "id": "LW6",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "CADB",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "AW1",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "BDAC",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "AW3",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "BCAD",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 3
+    },
+    {
+      "id": "BW11",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "BDAC",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "BW18",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "DCBA",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "BW19",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "ABDC",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW2-W2",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "ACBD",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW2-W5",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "ABDC",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW2-W10",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "BDAC",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW2-W18",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "DBAC",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 4
+    },
+    {
+      "id": "PSW2-W19",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "DACB",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 4
+    },
+    {
+      "id": "PSW2-W41",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "CDBA",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 3
+    },
+    {
+      "id": "PSW2-W43",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "DBAC",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 3
+    },
+    {
+      "id": "PSW2-W44",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "DBCA",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW2-W45",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "DCAB",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W5",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ABDC",
+      "afterMarkerOrder": "CDAB",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 3
+    },
+    {
+      "id": "PSW3-W6",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ACBD",
+      "afterMarkerOrder": "DBAC",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W8",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ABDC",
+      "afterMarkerOrder": "BCAD",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 3
+    },
+    {
+      "id": "PSW3-W9",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "BADC",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W10",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "DCBA",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W11",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "ABDC",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W12",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ACBD",
+      "afterMarkerOrder": "DBCA",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W13",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ADBC",
+      "afterMarkerOrder": "DCAB",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W14",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "DACB",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W15",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ACBD",
+      "afterMarkerOrder": "DBAC",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W16",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ACBD",
+      "afterMarkerOrder": "CDAB",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W17",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "CDBA",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W18",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ACBD",
+      "afterMarkerOrder": "CBAD",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W19",
+      "reason": "added-mixed-order-decoy",
+      "beforeMarkerOrder": "ABCD",
+      "afterMarkerOrder": "CBDA",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W20",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "ADCB",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W21",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "ADBC",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W22",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "ACDB",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W23",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "ACBD",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W24",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BACD",
+      "afterMarkerOrder": "ABDC",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W25",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "DCBA",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W26",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "DCAB",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W27",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "DBCA",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W28",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ACBD",
+      "afterMarkerOrder": "CBDA",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W29",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BACD",
+      "afterMarkerOrder": "CBAD",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W30",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "BDCA",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W32",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ADBC",
+      "afterMarkerOrder": "CBAD",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W33",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "CBDA",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W34",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "BADC",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W35",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ACBD",
+      "afterMarkerOrder": "BCAD",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W36",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BACD",
+      "afterMarkerOrder": "BCDA",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W37",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "BDAC",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W38",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "DBCA",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W39",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "DCAB",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W40",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BACD",
+      "afterMarkerOrder": "DCAB",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 4
+    },
+    {
+      "id": "PSW3-W41",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "DBCA",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W42",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ACBD",
+      "afterMarkerOrder": "ABDC",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W43",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BACD",
+      "afterMarkerOrder": "DCBA",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W44",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "CDBA",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W45",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "CDAB",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W46",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "ABDC",
+      "afterMarkerOrder": "DBAC",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 3
+    },
+    {
+      "id": "PSW3-W47",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "DACB",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W49",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "BADC",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W50",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "BCDA",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W51",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BACD",
+      "afterMarkerOrder": "BDAC",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W52",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BDAC",
+      "afterMarkerOrder": "BADC",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 2
+    },
+    {
+      "id": "PSW3-W53",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "BCAD",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W54",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BACD",
+      "afterMarkerOrder": "CBAD",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W55",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "CBDA",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W56",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "BDCA",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "B",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W57",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BACD",
+      "afterMarkerOrder": "CADB",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "C",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W58",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "DABC",
+      "afterMarkerOrder": "DACB",
+      "beforeCorrectAnswer": "D",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W59",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "CABD",
+      "afterMarkerOrder": "DBAC",
+      "beforeCorrectAnswer": "C",
+      "afterCorrectAnswer": "D",
+      "correctPhysicalPosition": 1
+    },
+    {
+      "id": "PSW3-W60",
+      "reason": "reworked-existing-mixed-order",
+      "beforeMarkerOrder": "BACD",
+      "afterMarkerOrder": "ABDC",
+      "beforeCorrectAnswer": "B",
+      "afterCorrectAnswer": "A",
+      "correctPhysicalPosition": 1
+    }
+  ]
+}

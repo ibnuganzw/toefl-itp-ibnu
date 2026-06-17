@@ -1,0 +1,85 @@
+:root {
+  --ui-font-sans: "Segoe UI Variable Text", "Segoe UI Variable", Inter, Aptos, "Segoe UI", system-ui, sans-serif;
+  --ui-font-display: "Segoe UI Variable Display", "Segoe UI Variable", Inter, Aptos, "Segoe UI", system-ui, sans-serif;
+  --ui-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --ui-color-ink: #10233f;
+  --ui-color-text: #263750;
+  --ui-color-muted: #66758a;
+  --ui-color-subtle: #8a97a9;
+  --ui-color-canvas: #f4f7fb;
+  --ui-color-surface: #ffffff;
+  --ui-color-surface-soft: #f8fafc;
+  --ui-color-border: #dce4ef;
+  --ui-color-border-strong: #c6d2e1;
+  --ui-color-navy: #082a52;
+  --ui-color-navy-strong: #061f40;
+  --ui-color-blue: #2764e7;
+  --ui-color-blue-soft: #edf3ff;
+  --ui-color-teal: #147967;
+  --ui-color-teal-strong: #0c6556;
+  --ui-color-teal-soft: #e9f7f3;
+  --ui-color-amber: #b56c12;
+  --ui-color-amber-soft: #fff6e8;
+  --ui-color-danger: #b64955;
+  --ui-color-danger-soft: #fff0f1;
+  --ui-color-success: #197463;
+  --ui-color-success-soft: #eaf7f3;
+
+  --ui-space-1: 4px;
+  --ui-space-2: 8px;
+  --ui-space-3: 12px;
+  --ui-space-4: 16px;
+  --ui-space-5: 20px;
+  --ui-space-6: 24px;
+  --ui-space-8: 32px;
+  --ui-space-10: 40px;
+
+  --ui-radius-xs: 4px;
+  --ui-radius-sm: 6px;
+  --ui-radius-md: 8px;
+  --ui-radius-pill: 999px;
+
+  --ui-shadow-xs: 0 2px 8px rgb(16 35 63 / 6%);
+  --ui-shadow-sm: 0 6px 18px rgb(16 35 63 / 8%);
+  --ui-shadow-md: 0 14px 34px rgb(16 35 63 / 10%);
+  --ui-shadow-focus: 0 0 0 4px rgb(39 100 231 / 14%);
+
+  --ui-control-sm: 36px;
+  --ui-control-md: 42px;
+  --ui-control-lg: 48px;
+  --ui-icon-sm: 16px;
+  --ui-icon-md: 19px;
+  --ui-icon-lg: 22px;
+  --ui-duration-fast: 140ms;
+  --ui-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Dark academic fantasy foundation. Roll out per-screen to protect readability. */
+  --arcane-bg: #070a12;
+  --arcane-bg-soft: #0b1020;
+  --arcane-bg-deep: #050711;
+  --arcane-surface: #111827;
+  --arcane-surface-soft: #151b2e;
+  --arcane-surface-raised: #191f35;
+  --arcane-surface-glass: rgb(15 23 42 / 78%);
+  --arcane-text: #f4f1e8;
+  --arcane-text-soft: #d9deea;
+  --arcane-text-muted: #99a5ba;
+  --arcane-text-dim: #707d94;
+  --arcane-emerald: #5bd6bd;
+  --arcane-emerald-deep: #16816f;
+  --arcane-violet: #9a7af1;
+  --arcane-gold: #e9c878;
+  --arcane-crimson: #dd7085;
+  --arcane-blue: #75a7eb;
+  --arcane-border: rgb(164 179 204 / 18%);
+  --arcane-border-strong: rgb(164 179 204 / 30%);
+  --arcane-border-emerald: rgb(91 214 189 / 34%);
+  --arcane-border-gold: rgb(233 200 120 / 34%);
+  --arcane-shadow-soft: 0 14px 34px rgb(0 0 0 / 24%);
+  --arcane-shadow-card: 0 24px 58px rgb(0 0 0 / 34%);
+  --arcane-shadow-deep: 0 34px 90px rgb(0 0 0 / 48%);
+  --arcane-glow-emerald: 0 0 34px rgb(91 214 189 / 16%);
+  --arcane-glow-gold: 0 0 34px rgb(233 200 120 / 14%);
+  --arcane-focus: 0 0 0 3px rgb(91 214 189 / 34%), 0 0 0 6px rgb(233 200 120 / 12%);
+}

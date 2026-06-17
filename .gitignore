@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.vite/
+coverage/
+*.local
+.env
+*.log
+*.pid
+*.tsbuildinfo
+.generated/
+public/audio/listening/.tmp-*
+src/data/raw/*.json
+.qa-*/
+qa-artifacts/
+v0-home-redesign-upload/
+v0-home-redesign-upload.zip

@@ -1,0 +1,46 @@
+{
+  "id": "reading-passage-example-id",
+  "sourceId": "optional-source-id",
+  "title": "Preserve original passage title",
+  "category": "Reading Comprehension",
+  "topic": "Optional topic",
+  "passage": "Preserve the full original passage text here.",
+  "active": false,
+  "questions": [
+    {
+      "id": "reading-question-example-id",
+      "sourceId": "optional-source-id",
+      "legacyId": "GNRQ1",
+      "section": "reading",
+      "passageId": "reading-passage-example-id",
+      "active": false,
+      "difficulty": "unknown",
+      "questionType": "Main Idea",
+      "readingSkill": "main-idea",
+      "evidenceLocation": "Preserve source evidence location.",
+      "keyEvidence": "Preserve key evidence.",
+      "paraphrasedEvidence": "Preserve paraphrased evidence.",
+      "questionText": "What is the passage mainly about?",
+      "choices": {
+        "A": "choice A",
+        "B": "choice B",
+        "C": "choice C",
+        "D": "choice D"
+      },
+      "correctAnswer": "A",
+      "explanation": {
+        "summary": "Preserve the original source summary here.",
+        "whyCorrect": "Preserve why the correct option is correct.",
+        "optionAnalysis": {
+          "A": "Preserve option A analysis.",
+          "B": "Preserve option B analysis.",
+          "C": "Preserve option C analysis.",
+          "D": "Preserve option D analysis."
+        },
+        "toeflTrap": "Preserve TOEFL trap notes.",
+        "quickNote": "Preserve quick note."
+      },
+      "tags": []
+    }
+  ]
+}

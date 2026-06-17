@@ -1,0 +1,1598 @@
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"], [data-screen="test-space"], [data-screen="progress"]) .dashboardMain {
+  display: block;
+  background:
+    radial-gradient(circle at 92% 2%, rgb(20 121 103 / 7%), transparent 25%),
+    var(--ui-color-canvas);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"], [data-screen="test-space"], [data-screen="progress"]) .dashboardContent {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: clamp(22px, 3vw, 46px) clamp(14px, 4vw, 64px) 72px;
+  overflow: visible;
+}
+
+.destinationPage {
+  display: grid;
+  min-width: 0;
+  gap: clamp(26px, 4vw, 48px);
+}
+
+.destinationPageHero {
+  display: grid;
+  min-height: 260px;
+  grid-template-columns: auto minmax(0, 1fr) minmax(180px, auto);
+  gap: clamp(18px, 3vw, 34px);
+  align-items: center;
+  border: 1px solid #cbdad6;
+  border-radius: 20px;
+  padding: clamp(26px, 4vw, 52px);
+  background:
+    radial-gradient(circle at 88% 10%, rgb(95 221 200 / 18%), transparent 28%),
+    linear-gradient(135deg, #ffffff 0%, #f5fbf9 58%, #edf6f3 100%);
+  box-shadow: 0 20px 54px rgb(16 35 63 / 8%);
+}
+
+.destinationPage--test-space .destinationPageHero {
+  border-color: #224c5c;
+  background:
+    radial-gradient(circle at 88% 18%, rgb(95 221 200 / 18%), transparent 28%),
+    linear-gradient(135deg, #082a43 0%, #0b4550 65%, #0b6557 100%);
+}
+
+.destinationPage--test-space .destinationPageHero h1,
+.destinationPage--test-space .destinationPageHeroAside strong {
+  color: #ffffff;
+}
+
+.destinationPage--test-space .destinationPageHeroCopy > span {
+  color: #d5e5e9;
+}
+
+.destinationPageHeroIcon {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  place-items: center;
+  border: 1px solid #c6ded7;
+  border-radius: 20px;
+  background: rgb(255 255 255 / 68%);
+  color: var(--ui-color-teal);
+}
+
+.destinationPageHeroIcon .uiIcon {
+  width: 38px;
+  height: 38px;
+}
+
+.destinationPageHeroCopy {
+  display: grid;
+  max-width: 900px;
+  gap: 8px;
+}
+
+.destinationPageHeroCopy > p,
+.destinationSectionHeader p,
+.progressTrendPanel header p,
+.customSimulationPanel header p,
+.reviewQueueCard p,
+.simulationModeCard > p {
+  margin: 0;
+  color: var(--ui-color-teal);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.destinationPageHeroCopy h1 {
+  margin: 0;
+  color: var(--ui-color-ink);
+  font-size: clamp(2.1rem, 4.5vw, 4.4rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.destinationPageHeroCopy > span {
+  max-width: 820px;
+  color: var(--ui-color-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.destinationPageHeroAside {
+  display: grid;
+  max-width: 220px;
+  justify-items: end;
+  text-align: right;
+}
+
+.destinationPageHeroAside strong {
+  color: var(--ui-color-teal-strong);
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.destinationSection {
+  display: grid;
+  min-width: 0;
+  gap: var(--ui-space-4);
+}
+
+.destinationSection--recommendation {
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+}
+
+.destinationSectionHeader {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid var(--ui-color-border);
+  padding-bottom: 13px;
+}
+
+.destinationSectionHeader h2,
+.progressTrendPanel h2,
+.customSimulationPanel h2 {
+  margin: 4px 0 0;
+  color: var(--ui-color-ink);
+  font-size: clamp(1.4rem, 2.6vw, 2.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.destinationSectionHeader > span,
+.customSimulationPanel header span {
+  color: var(--ui-color-muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.destinationSubjectGrid,
+.exploreInventoryGrid,
+.simulationModeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--ui-space-4);
+}
+
+.destinationSubjectGrid .dashboardSubjectCard {
+  min-height: 290px;
+}
+
+.exploreInventoryCard {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 15px;
+  border: 1px solid var(--ui-color-border);
+  border-radius: 14px;
+  padding: 20px;
+  background: var(--ui-color-surface);
+  box-shadow: var(--ui-shadow-xs);
+}
+
+.exploreInventoryCard > span {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--ui-color-teal-soft);
+  color: var(--ui-color-teal);
+}
+
+.exploreInventoryCard h3 {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.exploreInventoryCard p {
+  margin: 5px 0 10px;
+  color: var(--ui-color-muted);
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.exploreInventoryCard strong {
+  color: var(--ui-color-teal);
+  font-size: 0.72rem;
+}
+
+.exploreInventoryCard .uiButton {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.reviewQueueGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--ui-space-4);
+}
+
+.reviewQueueCard {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: start;
+  border: 1px solid var(--ui-color-border);
+  border-radius: 16px;
+  padding: clamp(18px, 3vw, 28px);
+  background: var(--ui-color-surface);
+  box-shadow: var(--ui-shadow-sm);
+}
+
+.reviewQueueCard--wrong {
+  border-top: 4px solid #c05c61;
+}
+
+.reviewQueueCard--doubtful {
+  border-top: 4px solid #b9852f;
+}
+
+.reviewQueueIcon {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--ui-color-surface-soft);
+  color: var(--ui-color-teal);
+}
+
+.reviewQueueCard h2 {
+  margin: 4px 0;
+  font-size: 1.25rem;
+}
+
+.reviewQueueCard div > span,
+.reviewQueueCard div > small {
+  display: block;
+  color: var(--ui-color-muted);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.reviewQueueCard div > small {
+  margin-top: 8px;
+}
+
+.reviewQueueCard > strong {
+  color: var(--ui-color-ink);
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 1;
+}
+
+.reviewQueueCard .uiButton {
+  grid-column: 2 / -1;
+  justify-self: start;
+}
+
+.collectionLearningGrid,
+.progressAnalysisGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: var(--ui-space-4);
+}
+
+.collectionLearningGrid > .homeDashboardPanel {
+  min-height: 330px;
+}
+
+.collectionLearningGrid--focus-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.collectionLearningGrid--focus-only > .homeDashboardPanel {
+  min-height: 0;
+}
+
+.simulationModeCard {
+  display: grid;
+  min-height: 320px;
+  align-content: start;
+  gap: 9px;
+  border: 1px solid var(--ui-color-border);
+  border-radius: 16px;
+  padding: 22px;
+  background: var(--ui-color-surface);
+  box-shadow: var(--ui-shadow-xs);
+}
+
+.simulationModeCard--full {
+  border-color: #a8cec4;
+  background:
+    radial-gradient(circle at 92% 0%, rgb(95 221 200 / 16%), transparent 32%),
+    var(--ui-color-surface);
+}
+
+.simulationModeCard > span {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--ui-color-teal-soft);
+  color: var(--ui-color-teal);
+}
+
+.simulationModeCard h2 {
+  margin: 5px 0 0;
+  font-size: 1.35rem;
+}
+
+.simulationModeCard > strong {
+  color: var(--ui-color-teal);
+  font-size: 0.76rem;
+}
+
+.simulationModeCard > div {
+  color: var(--ui-color-muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.simulationModeCard .uiButton {
+  width: 100%;
+  margin-top: auto;
+}
+
+.customSimulationPanel,
+.progressTrendPanel,
+.latestDiagnosticPanel {
+  display: grid;
+  gap: var(--ui-space-4);
+  border: 1px solid var(--ui-color-border);
+  border-radius: 16px;
+  padding: clamp(18px, 3vw, 28px);
+  background: var(--ui-color-surface);
+  box-shadow: var(--ui-shadow-xs);
+}
+
+.customSimulationPanel header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.customSimulationPanel header > strong {
+  color: var(--ui-color-teal);
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.customSimulationPanel form {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.customSimulationField {
+  display: grid;
+  gap: 5px;
+  color: var(--ui-color-muted);
+  font-size: 0.68rem;
+  font-weight: 720;
+}
+
+.customSimulationField input,
+.customSimulationField select {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--ui-color-border-strong);
+  border-radius: var(--ui-radius-sm);
+  padding: 8px;
+  background: var(--ui-color-surface);
+  color: var(--ui-color-ink);
+  font: inherit;
+}
+
+.customSimulationError {
+  grid-column: 1 / -1;
+  color: var(--ui-color-danger, #a33b43);
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.progressTrendList {
+  display: grid;
+  gap: 8px;
+}
+
+.progressTrendItem {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid var(--ui-color-border);
+  padding: 9px 0;
+}
+
+.progressTrendItem > span,
+.progressTrendItem small {
+  color: var(--ui-color-muted);
+  font-size: 0.68rem;
+}
+
+.progressTrendItem div,
+.progressTrendItem em {
+  display: grid;
+  gap: 2px;
+}
+
+.progressTrendItem em {
+  justify-items: end;
+  color: var(--ui-color-teal);
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.progressTrendItem em small {
+  font-size: 0.58rem;
+  text-transform: uppercase;
+}
+
+.diagnosticHeadlineStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.diagnosticHeadlineStats > div {
+  display: grid;
+  gap: 4px;
+  border: 1px solid var(--ui-color-border);
+  border-radius: 12px;
+  padding: 15px;
+  background: var(--ui-color-surface-soft);
+}
+
+.diagnosticHeadlineStats span {
+  color: var(--ui-color-muted);
+  font-size: 0.68rem;
+}
+
+.diagnosticHeadlineStats strong {
+  color: var(--ui-color-ink);
+  font-size: 1.7rem;
+}
+
+.diagnosticAreaColumns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--ui-space-4);
+}
+
+.diagnosticAreaList {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+}
+
+.diagnosticAreaList h3 {
+  margin: 0 0 4px;
+  font-size: 0.9rem;
+}
+
+.diagnosticAreaList > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid var(--ui-color-border);
+  padding: 8px 0;
+}
+
+.diagnosticAreaList span {
+  display: grid;
+  gap: 2px;
+}
+
+.diagnosticAreaList small {
+  color: var(--ui-color-muted);
+  font-size: 0.65rem;
+}
+
+.diagnosticAreaList em {
+  color: var(--ui-color-teal);
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.destinationEmptyState {
+  border: 1px dashed var(--ui-color-border-strong);
+  border-radius: 10px;
+  padding: 18px;
+  color: var(--ui-color-muted);
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1050px) {
+  .destinationPageHero {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .destinationPageHeroAside {
+    grid-column: 2;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .destinationSection--recommendation,
+  .collectionLearningGrid,
+  .progressAnalysisGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .customSimulationPanel form {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .dashboardViewport:is([data-screen="explore"], [data-screen="collection"], [data-screen="test-space"], [data-screen="progress"]) .dashboardContent {
+    padding: 12px 12px 54px;
+  }
+
+  .destinationPageHero {
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr);
+    border-radius: 14px;
+    padding: 22px 20px;
+  }
+
+  .destinationPageHeroIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+  }
+
+  .destinationPageHeroIcon .uiIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .destinationPageHeroCopy h1 {
+    font-size: clamp(2rem, 11vw, 3.25rem);
+  }
+
+  .destinationPageHeroAside {
+    grid-column: auto;
+  }
+
+  .destinationSectionHeader,
+  .customSimulationPanel header {
+    display: grid;
+  }
+
+  .destinationSubjectGrid,
+  .exploreInventoryGrid,
+  .simulationModeGrid,
+  .reviewQueueGrid,
+  .diagnosticAreaColumns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .reviewQueueCard {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .reviewQueueCard > strong {
+    grid-column: 1;
+  }
+
+  .reviewQueueCard .uiButton {
+    grid-column: 2;
+  }
+
+  .customSimulationPanel form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .customSimulationPanel form .uiButton {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .diagnosticHeadlineStats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .progressTrendItem {
+    grid-template-columns: 70px minmax(0, 1fr) auto;
+  }
+}
+
+/* Phase 2: dark academic treatment for discovery and the learning archive. */
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) {
+  --ui-color-ink: var(--arcane-text);
+  --ui-color-text: var(--arcane-text-soft);
+  --ui-color-muted: var(--arcane-text-muted);
+  --ui-color-subtle: var(--arcane-text-dim);
+  --ui-color-canvas: var(--arcane-bg);
+  --ui-color-surface: var(--arcane-surface);
+  --ui-color-surface-soft: var(--arcane-surface-soft);
+  --ui-color-border: var(--arcane-border);
+  --ui-color-border-strong: var(--arcane-border-strong);
+  --ui-color-blue: var(--arcane-blue);
+  --ui-color-blue-soft: rgb(117 167 235 / 11%);
+  --ui-color-teal: var(--arcane-emerald);
+  --ui-color-teal-strong: var(--arcane-emerald-deep);
+  --ui-color-teal-soft: rgb(91 214 189 / 10%);
+  --ui-color-amber: var(--arcane-gold);
+  --ui-color-amber-soft: rgb(233 200 120 / 10%);
+  --ui-color-danger: var(--arcane-crimson);
+  --ui-color-danger-soft: rgb(221 112 133 / 10%);
+  --ui-shadow-xs: 0 8px 22px rgb(0 0 0 / 18%);
+  --ui-shadow-sm: var(--arcane-shadow-soft);
+  color: var(--arcane-text-soft);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardMain {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 8% 2%, rgb(154 122 241 / 10%), transparent 27%),
+    radial-gradient(circle at 92% 10%, rgb(91 214 189 / 9%), transparent 28%),
+    linear-gradient(180deg, var(--arcane-bg-deep), var(--arcane-bg-soft) 44%, var(--arcane-bg));
+}
+
+.dashboardViewport[data-screen="collection"] .dashboardMain {
+  background:
+    radial-gradient(circle at 8% 2%, rgb(233 200 120 / 8%), transparent 27%),
+    radial-gradient(circle at 92% 10%, rgb(154 122 241 / 9%), transparent 28%),
+    linear-gradient(180deg, var(--arcane-bg-deep), #0d101c 44%, var(--arcane-bg));
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardMain::before {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgb(164 179 204 / 2.6%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(164 179 204 / 2.6%) 1px, transparent 1px);
+  background-size: 42px 42px;
+  content: "";
+  mask-image: linear-gradient(to bottom, black, transparent 72%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardContent {
+  position: relative;
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardNotice {
+  border-color: var(--arcane-border-emerald);
+  background: rgb(91 214 189 / 8%);
+  color: var(--arcane-text-soft);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHero {
+  position: relative;
+  overflow: hidden;
+  border-color: var(--arcane-border-emerald);
+  background:
+    radial-gradient(circle at 88% 14%, rgb(91 214 189 / 14%), transparent 27%),
+    radial-gradient(circle at 18% 0%, rgb(154 122 241 / 13%), transparent 30%),
+    linear-gradient(135deg, #15172a 0%, #101b29 58%, #0c2927 100%);
+  box-shadow: var(--arcane-shadow-card), inset 0 1px 0 rgb(255 255 255 / 5%);
+}
+
+.dashboardViewport[data-screen="collection"] .destinationPageHero {
+  border-color: var(--arcane-border-gold);
+  background:
+    radial-gradient(circle at 88% 14%, rgb(233 200 120 / 13%), transparent 27%),
+    radial-gradient(circle at 18% 0%, rgb(154 122 241 / 12%), transparent 30%),
+    linear-gradient(135deg, #191827 0%, #171923 58%, #242017 100%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHero::before {
+  position: absolute;
+  top: -160px;
+  right: -120px;
+  width: 390px;
+  height: 390px;
+  border: 1px solid rgb(91 214 189 / 10%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 48px rgb(154 122 241 / 3%),
+    0 0 0 96px rgb(233 200 120 / 2.5%);
+  content: "";
+  pointer-events: none;
+}
+
+.dashboardViewport[data-screen="collection"] .destinationPageHero::before {
+  border-color: rgb(233 200 120 / 11%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHero::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--arcane-emerald), var(--arcane-gold), transparent);
+  content: "";
+  opacity: 0.42;
+}
+
+.dashboardViewport[data-screen="collection"] .destinationPageHero::after {
+  background: linear-gradient(90deg, transparent, var(--arcane-violet), var(--arcane-gold), transparent);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHeroIcon {
+  border-color: var(--arcane-border-gold);
+  background: rgb(233 200 120 / 7%);
+  color: var(--arcane-gold);
+  box-shadow: var(--arcane-glow-gold), inset 0 1px 0 rgb(255 255 255 / 5%);
+}
+
+.dashboardViewport[data-screen="explore"] .destinationPageHeroIcon {
+  border-color: var(--arcane-border-emerald);
+  background: rgb(91 214 189 / 7%);
+  color: var(--arcane-emerald);
+  box-shadow: var(--arcane-glow-emerald), inset 0 1px 0 rgb(255 255 255 / 5%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHeroCopy > p,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationSectionHeader p,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .homeDashboardPanelHeader p,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .reviewQueueCard p {
+  color: var(--arcane-gold);
+  letter-spacing: 0.09em;
+}
+
+.dashboardViewport[data-screen="explore"] .destinationPageHeroCopy > p,
+.dashboardViewport[data-screen="explore"] .destinationSectionHeader p,
+.dashboardViewport[data-screen="explore"] .homeDashboardPanelHeader p {
+  color: var(--arcane-emerald);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHeroCopy h1 {
+  color: var(--arcane-text);
+  font-weight: 720;
+  text-shadow: 0 12px 38px rgb(0 0 0 / 34%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHeroCopy > span,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationSectionHeader > span {
+  color: var(--arcane-text-muted);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHeroAside strong {
+  color: var(--arcane-gold);
+}
+
+.dashboardViewport[data-screen="explore"] .destinationPageHeroAside strong {
+  color: var(--arcane-emerald);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationSectionHeader {
+  border-bottom-color: var(--arcane-border);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationSectionHeader h2,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .homeDashboardPanelHeader h2,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardSubjectCard > strong,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardRecommendationItem strong,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardFocusList strong,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .exploreInventoryCard h3,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .reviewQueueCard h2,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .reviewQueueCard > strong,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardEmptyState strong {
+  color: var(--arcane-text);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .homeDashboardPanel,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardSubjectCard,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .exploreInventoryCard,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .reviewQueueCard {
+  border-color: var(--arcane-border);
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 2.5%), transparent 44%),
+    var(--arcane-surface);
+  box-shadow: var(--arcane-shadow-soft), inset 0 1px 0 rgb(255 255 255 / 3%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .homeDashboardPanel {
+  border-radius: 14px;
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardRecommendationItem {
+  border-color: var(--arcane-border);
+  background: rgb(255 255 255 / 2.5%);
+  color: var(--arcane-text-soft);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardRecommendationItem:hover {
+  border-color: color-mix(in srgb, var(--dashboard-tone) 48%, var(--arcane-border));
+  background: color-mix(in srgb, var(--dashboard-tone) 7%, var(--arcane-surface-soft));
+  box-shadow: 0 12px 30px rgb(0 0 0 / 18%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardRecommendationItem small,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardSubjectCard > span:not(.dashboardSubjectIcon),
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardSubjectCard > small,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardFocusList small,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .exploreInventoryCard p,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .reviewQueueCard div > span,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .reviewQueueCard div > small,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardEmptyState {
+  color: var(--arcane-text-muted);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .tone-blue {
+  --dashboard-tone: var(--arcane-blue);
+  --dashboard-tone-soft: rgb(117 167 235 / 11%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .tone-green {
+  --dashboard-tone: var(--arcane-emerald);
+  --dashboard-tone-soft: rgb(91 214 189 / 10%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .tone-amber {
+  --dashboard-tone: var(--arcane-gold);
+  --dashboard-tone-soft: rgb(233 200 120 / 10%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .tone-violet {
+  --dashboard-tone: var(--arcane-violet);
+  --dashboard-tone-soft: rgb(154 122 241 / 11%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .tone-neutral {
+  --dashboard-tone: #9aa9bf;
+  --dashboard-tone-soft: rgb(154 169 191 / 10%);
+}
+
+.dashboardViewport[data-screen="explore"] .dashboardSubjectCard {
+  min-height: 0;
+  gap: 10px;
+  border-top-color: color-mix(in srgb, var(--dashboard-tone) 52%, var(--arcane-border));
+  padding: 16px;
+}
+
+.dashboardViewport[data-screen="explore"] .dashboardSubjectIcon {
+  width: 38px;
+  height: 38px;
+}
+
+.dashboardViewport[data-screen="explore"] .dashboardSubjectIcon .uiIcon {
+  width: 19px;
+  height: 19px;
+}
+
+.dashboardViewport[data-screen="explore"] .arcane-discipline-description {
+  min-height: 2.8em;
+}
+
+.dashboardViewport[data-screen="explore"] .arcane-discipline-footer {
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.dashboardViewport[data-screen="explore"] .arcane-discipline-footer .arcane-discipline-note {
+  font-size: 0.64rem;
+}
+
+.dashboardViewport[data-screen="explore"] .dashboardSubjectPackages {
+  min-height: 40px;
+}
+
+.dashboardViewport[data-screen="explore"] .dashboardSubjectPackages .uiSegmented__option {
+  min-height: 38px;
+}
+
+.dashboardViewport[data-screen="explore"] .dashboardSubjectCard:hover {
+  border-color: color-mix(in srgb, var(--dashboard-tone) 58%, var(--arcane-border));
+  box-shadow: var(--arcane-shadow-card), 0 0 34px color-mix(in srgb, var(--dashboard-tone) 9%, transparent);
+  transform: translateY(-2px);
+}
+
+.dashboardViewport[data-screen="explore"] .dashboardSubjectIcon {
+  border: 1px solid color-mix(in srgb, var(--dashboard-tone) 36%, transparent);
+  background: color-mix(in srgb, var(--dashboard-tone) 12%, transparent);
+  color: var(--dashboard-tone);
+  box-shadow: 0 0 24px color-mix(in srgb, var(--dashboard-tone) 12%, transparent);
+}
+
+.dashboardViewport[data-screen="explore"] .exploreInventoryCard {
+  position: relative;
+  overflow: hidden;
+  border-top-color: var(--arcane-border-emerald);
+}
+
+.dashboardViewport[data-screen="explore"] .exploreInventoryCard::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--arcane-emerald), transparent);
+  content: "";
+  opacity: 0.32;
+}
+
+.dashboardViewport[data-screen="explore"] .exploreInventoryCard > span {
+  border: 1px solid var(--arcane-border-emerald);
+  background: rgb(91 214 189 / 8%);
+  color: var(--arcane-emerald);
+  box-shadow: var(--arcane-glow-emerald);
+}
+
+.dashboardViewport[data-screen="explore"] .exploreInventoryCard strong {
+  color: var(--arcane-emerald);
+}
+
+.dashboardViewport[data-screen="collection"] .reviewQueueCard {
+  position: relative;
+  overflow: hidden;
+  border-top-width: 1px;
+}
+
+.dashboardViewport[data-screen="collection"] .reviewQueueCard::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: var(--queue-accent);
+  content: "";
+  box-shadow: 0 0 24px color-mix(in srgb, var(--queue-accent) 22%, transparent);
+}
+
+.dashboardViewport[data-screen="collection"] .reviewQueueCard--wrong {
+  --queue-accent: var(--arcane-crimson);
+  background:
+    radial-gradient(circle at 98% 0%, rgb(221 112 133 / 9%), transparent 30%),
+    linear-gradient(180deg, rgb(255 255 255 / 2.5%), transparent 44%),
+    var(--arcane-surface);
+}
+
+.dashboardViewport[data-screen="collection"] .reviewQueueCard--doubtful {
+  --queue-accent: var(--arcane-gold);
+  background:
+    radial-gradient(circle at 98% 0%, rgb(233 200 120 / 9%), transparent 30%),
+    linear-gradient(180deg, rgb(255 255 255 / 2.5%), transparent 44%),
+    var(--arcane-surface);
+}
+
+.dashboardViewport[data-screen="collection"] .reviewQueueIcon {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  border: 1px solid color-mix(in srgb, var(--queue-accent) 38%, transparent);
+  background: color-mix(in srgb, var(--queue-accent) 9%, transparent);
+  color: var(--queue-accent);
+  font-size: initial;
+  line-height: 1;
+  box-shadow: 0 0 26px color-mix(in srgb, var(--queue-accent) 12%, transparent);
+}
+
+.dashboardViewport[data-screen="collection"] .reviewQueueIcon .uiIcon {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+}
+
+.dashboardViewport[data-screen="collection"] .reviewQueueCard p {
+  color: var(--queue-accent);
+}
+
+.dashboardViewport[data-screen="collection"] .reviewQueueCard > strong {
+  color: var(--queue-accent);
+  text-shadow: 0 0 28px color-mix(in srgb, var(--queue-accent) 16%, transparent);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardFocusList button {
+  border-bottom-color: var(--arcane-border);
+  color: var(--arcane-text-soft);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardFocusList button:hover,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardFocusList em {
+  color: var(--arcane-emerald);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardEmptyState {
+  border-color: var(--arcane-border-strong);
+  background: rgb(255 255 255 / 2%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .uiSegmented {
+  border-color: var(--arcane-border);
+  background: rgb(4 8 16 / 52%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .uiSegmented__option {
+  color: var(--arcane-text-muted);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .uiSegmented__option:hover:not(:disabled) {
+  background: rgb(255 255 255 / 5%);
+  color: var(--arcane-text);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .uiSegmented__option.isActive {
+  background: rgb(91 214 189 / 12%);
+  color: var(--arcane-emerald);
+  box-shadow: inset 0 0 0 1px var(--arcane-border-emerald);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .uiButton--primary {
+  border-color: rgb(91 214 189 / 52%);
+  background: linear-gradient(180deg, #209a83, #167564);
+  color: #ffffff;
+  box-shadow: 0 12px 26px rgb(0 0 0 / 24%), var(--arcane-glow-emerald);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .uiButton--primary:hover:not(:disabled) {
+  border-color: var(--arcane-emerald);
+  background: linear-gradient(180deg, #27ab92, #197e6c);
+  box-shadow: 0 16px 32px rgb(0 0 0 / 28%), 0 0 30px rgb(91 214 189 / 20%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .uiButton--secondary {
+  border-color: var(--arcane-border-gold);
+  background: rgb(233 200 120 / 7%);
+  color: var(--arcane-gold);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .uiButton--secondary:hover:not(:disabled) {
+  border-color: rgb(233 200 120 / 56%);
+  background: rgb(233 200 120 / 12%);
+  color: #f7dea1;
+}
+
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .uiButton:focus-visible,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) button:focus-visible,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) input:focus-visible,
+.dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) summary:focus-visible {
+  outline: 2px solid var(--arcane-emerald);
+  outline-offset: 3px;
+  box-shadow: var(--arcane-focus);
+}
+
+@media (max-width: 760px) {
+  .dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .dashboardMain::before {
+    background-size: 34px 34px;
+  }
+
+  .dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHero::before {
+    top: -230px;
+    right: -230px;
+  }
+
+  .dashboardViewport:is([data-screen="explore"], [data-screen="collection"]) .destinationPageHeroCopy h1 {
+    line-height: 1.02;
+  }
+}
+
+/* Phase 3: dark evaluation chamber and reflective progress observatory. */
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) {
+  --ui-color-ink: var(--arcane-text);
+  --ui-color-text: var(--arcane-text-soft);
+  --ui-color-muted: var(--arcane-text-muted);
+  --ui-color-subtle: var(--arcane-text-dim);
+  --ui-color-canvas: var(--arcane-bg);
+  --ui-color-surface: var(--arcane-surface);
+  --ui-color-surface-soft: var(--arcane-surface-soft);
+  --ui-color-border: var(--arcane-border);
+  --ui-color-border-strong: var(--arcane-border-strong);
+  --ui-color-blue: var(--arcane-blue);
+  --ui-color-blue-soft: rgb(117 167 235 / 11%);
+  --ui-color-teal: var(--arcane-emerald);
+  --ui-color-teal-strong: var(--arcane-emerald-deep);
+  --ui-color-teal-soft: rgb(91 214 189 / 10%);
+  --ui-color-amber: var(--arcane-gold);
+  --ui-color-amber-soft: rgb(233 200 120 / 10%);
+  --ui-color-danger: var(--arcane-crimson);
+  --ui-color-danger-soft: rgb(221 112 133 / 10%);
+  --ui-shadow-xs: 0 8px 22px rgb(0 0 0 / 18%);
+  --ui-shadow-sm: var(--arcane-shadow-soft);
+  color: var(--arcane-text-soft);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardMain {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 8% 2%, rgb(117 167 235 / 9%), transparent 27%),
+    radial-gradient(circle at 92% 10%, rgb(154 122 241 / 9%), transparent 28%),
+    linear-gradient(180deg, var(--arcane-bg-deep), #0b1020 44%, var(--arcane-bg));
+}
+
+.dashboardViewport[data-screen="progress"] .dashboardMain {
+  background:
+    radial-gradient(circle at 8% 2%, rgb(91 214 189 / 9%), transparent 27%),
+    radial-gradient(circle at 92% 10%, rgb(233 200 120 / 8%), transparent 28%),
+    linear-gradient(180deg, var(--arcane-bg-deep), #0b131c 44%, var(--arcane-bg));
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardMain::before {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgb(164 179 204 / 2.6%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(164 179 204 / 2.6%) 1px, transparent 1px);
+  background-size: 42px 42px;
+  content: "";
+  mask-image: linear-gradient(to bottom, black, transparent 72%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardContent {
+  position: relative;
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardNotice {
+  border-color: var(--arcane-border-emerald);
+  background: rgb(91 214 189 / 8%);
+  color: var(--arcane-text-soft);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHero {
+  position: relative;
+  overflow: hidden;
+  border-color: rgb(117 167 235 / 34%);
+  background:
+    radial-gradient(circle at 88% 14%, rgb(117 167 235 / 13%), transparent 27%),
+    radial-gradient(circle at 18% 0%, rgb(154 122 241 / 14%), transparent 30%),
+    linear-gradient(135deg, #15182a 0%, #111a2a 58%, #101c2b 100%);
+  box-shadow: var(--arcane-shadow-card), inset 0 1px 0 rgb(255 255 255 / 5%);
+}
+
+.dashboardViewport[data-screen="progress"] .destinationPageHero {
+  border-color: var(--arcane-border-emerald);
+  background:
+    radial-gradient(circle at 88% 14%, rgb(233 200 120 / 11%), transparent 27%),
+    radial-gradient(circle at 18% 0%, rgb(91 214 189 / 13%), transparent 30%),
+    linear-gradient(135deg, #121b25 0%, #101d27 58%, #16251f 100%);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHero::before {
+  position: absolute;
+  top: -160px;
+  right: -120px;
+  width: 390px;
+  height: 390px;
+  border: 1px solid rgb(117 167 235 / 11%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 48px rgb(154 122 241 / 3%),
+    0 0 0 96px rgb(233 200 120 / 2.5%);
+  content: "";
+  pointer-events: none;
+}
+
+.dashboardViewport[data-screen="progress"] .destinationPageHero::before {
+  border-color: rgb(91 214 189 / 11%);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHero::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--arcane-blue), var(--arcane-violet), var(--arcane-gold), transparent);
+  content: "";
+  opacity: 0.45;
+}
+
+.dashboardViewport[data-screen="progress"] .destinationPageHero::after {
+  background: linear-gradient(90deg, transparent, var(--arcane-emerald), var(--arcane-gold), transparent);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHeroIcon {
+  border-color: rgb(117 167 235 / 38%);
+  background: rgb(117 167 235 / 8%);
+  color: var(--arcane-blue);
+  box-shadow: 0 0 34px rgb(117 167 235 / 15%), inset 0 1px 0 rgb(255 255 255 / 5%);
+}
+
+.dashboardViewport[data-screen="progress"] .destinationPageHeroIcon {
+  border-color: var(--arcane-border-emerald);
+  background: rgb(91 214 189 / 7%);
+  color: var(--arcane-emerald);
+  box-shadow: var(--arcane-glow-emerald), inset 0 1px 0 rgb(255 255 255 / 5%);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHeroCopy > p,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationSectionHeader p,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .homeDashboardPanelHeader p,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .progressTrendPanel header p,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .customSimulationPanel header p,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .simulationModeCard > p,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardScoreTargetIntro p {
+  color: var(--arcane-gold);
+  letter-spacing: 0.09em;
+}
+
+.dashboardViewport[data-screen="progress"] .destinationPageHeroCopy > p,
+.dashboardViewport[data-screen="progress"] .destinationSectionHeader p,
+.dashboardViewport[data-screen="progress"] .homeDashboardPanelHeader p,
+.dashboardViewport[data-screen="progress"] .progressTrendPanel header p,
+.dashboardViewport[data-screen="progress"] .dashboardScoreTargetIntro p {
+  color: var(--arcane-emerald);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHeroCopy h1,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHeroAside strong {
+  color: var(--arcane-text);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHeroCopy h1 {
+  font-weight: 720;
+  text-shadow: 0 12px 38px rgb(0 0 0 / 34%);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHeroCopy > span,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationSectionHeader > span,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .customSimulationPanel header span {
+  color: var(--arcane-text-muted);
+}
+
+.dashboardViewport[data-screen="test-space"] .destinationPageHeroAside strong {
+  color: var(--arcane-gold);
+}
+
+.dashboardViewport[data-screen="test-space"] .destinationPageHeroAside {
+  width: min(100%, 320px);
+  max-width: 320px;
+  justify-items: stretch;
+  text-align: left;
+}
+
+.dashboardViewport[data-screen="progress"] .destinationPageHeroAside strong {
+  color: var(--arcane-emerald);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .homeDashboardPanel,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .simulationModeCard,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .customSimulationPanel,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .progressTrendPanel,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .latestDiagnosticPanel,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardSummaryCard,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardScoreTarget {
+  border-color: var(--arcane-border);
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 2.5%), transparent 44%),
+    var(--arcane-surface);
+  box-shadow: var(--arcane-shadow-soft), inset 0 1px 0 rgb(255 255 255 / 3%);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .homeDashboardPanel {
+  border-radius: 14px;
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .homeDashboardPanelHeader h2,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .simulationModeCard h2,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .customSimulationPanel h2,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .progressTrendPanel h2,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationSectionHeader h2,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardScoreTargetIntro h2,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardScoreTargetStats strong,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardSummaryCopy > strong,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardHistoryList strong,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .weeklyTargetList li.isComplete,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .diagnosticHeadlineStats strong,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .diagnosticAreaList h3,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .diagnosticAreaList strong {
+  color: var(--arcane-text);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .simulationModeCard > div,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardScoreTargetIntro span,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardScoreTargetStats span,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardSummaryCopy > span:first-child,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardSummaryCopy > small,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardHistoryList small,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .weeklyTargetSummary span,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .weeklyTargetList li,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .progressTrendItem > span,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .progressTrendItem small,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .diagnosticHeadlineStats span,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .diagnosticAreaList small,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationEmptyState,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardEmptyState {
+  color: var(--arcane-text-muted);
+}
+
+.dashboardViewport[data-screen="test-space"] .simulationModeCard {
+  --mode-accent: var(--arcane-blue);
+  position: relative;
+  overflow: hidden;
+  border-top-color: color-mix(in srgb, var(--mode-accent) 54%, var(--arcane-border));
+}
+
+.dashboardViewport[data-screen="test-space"] .simulationModeCard--reading {
+  --mode-accent: var(--arcane-violet);
+}
+
+.dashboardViewport[data-screen="test-space"] .simulationModeCard--full {
+  --mode-accent: var(--arcane-gold);
+  border-color: var(--arcane-border-gold);
+  background:
+    radial-gradient(circle at 92% 0%, rgb(233 200 120 / 12%), transparent 34%),
+    linear-gradient(180deg, rgb(255 255 255 / 2.5%), transparent 44%),
+    var(--arcane-surface);
+}
+
+.dashboardViewport[data-screen="test-space"] .simulationModeCard::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--mode-accent), transparent);
+  content: "";
+  opacity: 0.42;
+}
+
+.dashboardViewport[data-screen="test-space"] .simulationModeCard:hover {
+  border-color: color-mix(in srgb, var(--mode-accent) 58%, var(--arcane-border));
+  box-shadow: var(--arcane-shadow-card), 0 0 34px color-mix(in srgb, var(--mode-accent) 10%, transparent);
+  transform: translateY(-2px);
+}
+
+.dashboardViewport[data-screen="test-space"] .simulationModeCard > span {
+  border: 1px solid color-mix(in srgb, var(--mode-accent) 38%, transparent);
+  background: color-mix(in srgb, var(--mode-accent) 9%, transparent);
+  color: var(--mode-accent);
+  box-shadow: 0 0 26px color-mix(in srgb, var(--mode-accent) 13%, transparent);
+}
+
+.dashboardViewport[data-screen="test-space"] .simulationModeCard > strong {
+  color: var(--mode-accent);
+}
+
+.dashboardViewport[data-screen="test-space"] .customSimulationPanel {
+  border-color: rgb(154 122 241 / 30%);
+  background:
+    radial-gradient(circle at 98% 0%, rgb(154 122 241 / 10%), transparent 30%),
+    linear-gradient(180deg, rgb(255 255 255 / 2.5%), transparent 44%),
+    var(--arcane-surface);
+}
+
+.dashboardViewport[data-screen="test-space"] .customSimulationPanel header > strong {
+  color: var(--arcane-gold);
+}
+
+.dashboardViewport[data-screen="test-space"] .customSimulationField {
+  color: var(--arcane-text-muted);
+}
+
+.dashboardViewport[data-screen="test-space"] .customSimulationField input,
+.dashboardViewport[data-screen="test-space"] .customSimulationField select {
+  border-color: var(--arcane-border-strong);
+  background: rgb(5 9 17 / 72%);
+  color: var(--arcane-text);
+  color-scheme: dark;
+}
+
+.dashboardViewport[data-screen="test-space"] .customSimulationField input:hover,
+.dashboardViewport[data-screen="test-space"] .customSimulationField select:hover {
+  border-color: rgb(154 122 241 / 52%);
+}
+
+.dashboardViewport[data-screen="test-space"] .customSimulationField input:focus,
+.dashboardViewport[data-screen="test-space"] .customSimulationField select:focus {
+  border-color: var(--arcane-violet);
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(154 122 241 / 24%);
+}
+
+.dashboardViewport[data-screen="test-space"] .customSimulationError {
+  color: var(--arcane-crimson);
+}
+
+.dashboardViewport[data-screen="progress"] .dashboardScoreTarget {
+  border-color: var(--arcane-border-gold);
+  background:
+    radial-gradient(circle at 3% 0%, rgb(233 200 120 / 10%), transparent 32%),
+    linear-gradient(135deg, rgb(24 27 43 / 98%), rgb(14 23 37 / 98%));
+}
+
+.dashboardViewport[data-screen="progress"] .dashboardScoreTargetStats > div {
+  border-left-color: var(--arcane-border-gold);
+  background: rgb(255 255 255 / 1.8%);
+}
+
+.dashboardViewport[data-screen="progress"] .dashboardScoreTargetForm > label {
+  color: var(--arcane-text-soft);
+}
+
+.dashboardViewport[data-screen="progress"] .dashboardScoreTargetForm input {
+  border-color: var(--arcane-border-strong);
+  background: rgb(5 9 17 / 72%);
+  color: var(--arcane-text);
+}
+
+.dashboardViewport[data-screen="progress"] .dashboardScoreTargetForm input:focus {
+  border-color: var(--arcane-emerald);
+  outline: none;
+  box-shadow: var(--arcane-focus);
+}
+
+.dashboardViewport[data-screen="progress"] .tone-blue {
+  --dashboard-tone: var(--arcane-blue);
+  --dashboard-tone-soft: rgb(117 167 235 / 11%);
+}
+
+.dashboardViewport[data-screen="progress"] .tone-green {
+  --dashboard-tone: var(--arcane-emerald);
+  --dashboard-tone-soft: rgb(91 214 189 / 10%);
+}
+
+.dashboardViewport[data-screen="progress"] .tone-amber {
+  --dashboard-tone: var(--arcane-gold);
+  --dashboard-tone-soft: rgb(233 200 120 / 10%);
+}
+
+.dashboardViewport[data-screen="progress"] .tone-violet {
+  --dashboard-tone: var(--arcane-violet);
+  --dashboard-tone-soft: rgb(154 122 241 / 11%);
+}
+
+.dashboardViewport[data-screen="progress"] .tone-neutral {
+  --dashboard-tone: #9aa9bf;
+  --dashboard-tone-soft: rgb(154 169 191 / 10%);
+}
+
+.dashboardViewport[data-screen="progress"] .dashboardSummaryCard {
+  border-top-color: color-mix(in srgb, var(--dashboard-tone) 46%, var(--arcane-border));
+}
+
+.dashboardViewport[data-screen="progress"] .dashboardSummaryIcon {
+  border: 1px solid color-mix(in srgb, var(--dashboard-tone) 36%, transparent);
+  background: color-mix(in srgb, var(--dashboard-tone) 12%, transparent);
+  color: var(--dashboard-tone);
+  box-shadow: 0 0 24px color-mix(in srgb, var(--dashboard-tone) 12%, transparent);
+}
+
+.dashboardViewport[data-screen="progress"] .dashboardSummaryProgress,
+.dashboardViewport[data-screen="progress"] .weeklyTargetTrack {
+  background: rgb(255 255 255 / 7%);
+}
+
+.dashboardViewport[data-screen="progress"] .progressTrendPanel {
+  border-color: rgb(117 167 235 / 28%);
+}
+
+.dashboardViewport[data-screen="progress"] .progressTrendItem,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardHistoryItem,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardHistoryDetails > div,
+.dashboardViewport[data-screen="progress"] .diagnosticAreaList > div,
+.dashboardViewport[data-screen="progress"] .destinationSectionHeader {
+  border-color: var(--arcane-border);
+}
+
+.dashboardViewport[data-screen="progress"] .progressTrendItem em,
+.dashboardViewport[data-screen="progress"] .diagnosticAreaList em,
+.dashboardViewport[data-screen="progress"] .weeklyRemaining,
+.dashboardViewport[data-screen="progress"] .weeklyTargetSummary strong,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardHistoryList em {
+  color: var(--arcane-emerald);
+}
+
+.dashboardViewport[data-screen="progress"] .latestDiagnosticPanel {
+  border-color: var(--arcane-border-emerald);
+  background:
+    radial-gradient(circle at 96% 0%, rgb(91 214 189 / 9%), transparent 32%),
+    linear-gradient(180deg, rgb(255 255 255 / 2.5%), transparent 44%),
+    var(--arcane-surface);
+}
+
+.dashboardViewport[data-screen="progress"] .diagnosticHeadlineStats > div {
+  border-color: var(--arcane-border);
+  background: rgb(255 255 255 / 2.5%);
+}
+
+.dashboardViewport[data-screen="progress"] .diagnosticHeadlineStats > div:nth-child(1) {
+  border-top-color: var(--arcane-emerald);
+}
+
+.dashboardViewport[data-screen="progress"] .diagnosticHeadlineStats > div:nth-child(2) {
+  border-top-color: var(--arcane-blue);
+}
+
+.dashboardViewport[data-screen="progress"] .diagnosticHeadlineStats > div:nth-child(3) {
+  border-top-color: var(--arcane-gold);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardEmptyState,
+.dashboardViewport[data-screen="progress"] .destinationEmptyState {
+  border-color: var(--arcane-border-strong);
+  background: rgb(255 255 255 / 2%);
+}
+
+.dashboardViewport[data-screen="progress"] .weeklyTargetList li > span {
+  border-color: var(--arcane-border-strong);
+  color: var(--arcane-text-dim);
+}
+
+.dashboardViewport[data-screen="progress"] .weeklyTargetList li.isComplete > span {
+  border-color: var(--arcane-emerald);
+  background: var(--arcane-emerald-deep);
+  color: #ffffff;
+  box-shadow: var(--arcane-glow-emerald);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .uiButton--primary {
+  border-color: rgb(91 214 189 / 52%);
+  background: linear-gradient(180deg, #209a83, #167564);
+  color: #ffffff;
+  box-shadow: 0 12px 26px rgb(0 0 0 / 24%), var(--arcane-glow-emerald);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .uiButton--primary:hover:not(:disabled) {
+  border-color: var(--arcane-emerald);
+  background: linear-gradient(180deg, #27ab92, #197e6c);
+  box-shadow: 0 16px 32px rgb(0 0 0 / 28%), 0 0 30px rgb(91 214 189 / 20%);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .uiButton--secondary {
+  border-color: rgb(117 167 235 / 34%);
+  background: rgb(117 167 235 / 7%);
+  color: var(--arcane-blue);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .uiButton--secondary:hover:not(:disabled) {
+  border-color: rgb(117 167 235 / 56%);
+  background: rgb(117 167 235 / 12%);
+  color: #a9c9f4;
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .uiButton--ghost {
+  color: var(--arcane-text-muted);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .uiButton--ghost:hover:not(:disabled) {
+  background: rgb(255 255 255 / 5%);
+  color: var(--arcane-text);
+}
+
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .uiButton:focus-visible,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) button:focus-visible,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) input:focus-visible,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) select:focus-visible,
+.dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) summary:focus-visible {
+  outline: 2px solid var(--arcane-emerald);
+  outline-offset: 3px;
+  box-shadow: var(--arcane-focus);
+}
+
+@media (max-width: 760px) {
+  .dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .dashboardMain::before {
+    background-size: 34px 34px;
+  }
+
+  .dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHero::before {
+    top: -230px;
+    right: -230px;
+  }
+
+  .dashboardViewport:is([data-screen="test-space"], [data-screen="progress"]) .destinationPageHeroCopy h1 {
+    line-height: 1.02;
+  }
+}

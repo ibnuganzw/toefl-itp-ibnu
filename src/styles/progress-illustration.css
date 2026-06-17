@@ -1,0 +1,578 @@
+.progressIllustration {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  margin: 0;
+  isolation: isolate;
+}
+
+.progressIllustration svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.progressIllustration figcaption {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  display: grid;
+  max-width: 190px;
+  gap: 2px;
+  border: 1px solid rgb(255 255 255 / 68%);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: rgb(255 255 255 / 78%);
+  box-shadow: 0 12px 30px rgb(16 35 63 / 12%);
+  backdrop-filter: blur(12px);
+}
+
+.progressIllustration figcaption span {
+  color: var(--ui-color-teal);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.progressIllustration figcaption strong {
+  color: var(--ui-color-ink);
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+.progressIllustration figcaption small {
+  color: var(--ui-color-muted);
+  font-size: 0.62rem;
+  line-height: 1.35;
+}
+
+.progressIllustration--compact figcaption {
+  right: 2%;
+  bottom: 1%;
+}
+
+.progressSceneBackground {
+  stroke: #b9d4cc;
+  stroke-width: 2;
+}
+
+.progressSceneWindow {
+  opacity: calc(0.58 + var(--progress-stage) * 0.08);
+}
+
+.progressSceneSun {
+  fill: #f4c76f;
+  opacity: calc(0.25 + var(--progress-stage) * 0.14);
+  filter: url("#progress-glow");
+}
+
+.progressSceneHill {
+  fill: #aacfc0;
+  opacity: calc(0.24 + var(--progress-stage) * 0.08);
+}
+
+.progressLampGlow {
+  opacity: var(--progress-lamp-opacity);
+  transform-origin: 142px 255px;
+  animation: progressLampBreathe 4.4s ease-in-out both;
+}
+
+.progressLeaf {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: progressLeafArrive 550ms cubic-bezier(0.2, 0.85, 0.35, 1) both, progressLeafSway 4.4s ease-in-out both;
+}
+
+.progressBook {
+  animation: progressBookArrive 450ms cubic-bezier(0.2, 0.85, 0.35, 1) both;
+}
+
+.progressDiagnosticBar {
+  animation: progressBarArrive 620ms cubic-bezier(0.2, 0.85, 0.35, 1) both;
+}
+
+.progressTargetMark {
+  transform-origin: 438px 250px;
+  animation: progressTargetPulse 3.8s ease-in-out both;
+}
+
+.progressPetSilhouette {
+  transform-origin: 218px 310px;
+  animation: progressPetBreathe 4.5s ease-in-out both;
+}
+
+.progressPaw {
+  fill: #b8cbc9;
+  opacity: 0.3;
+  transition: fill 300ms var(--ui-ease-standard), opacity 300ms var(--ui-ease-standard);
+}
+
+.progressPaw--active {
+  fill: #3e9a82;
+  opacity: 0.86;
+  animation: progressPawArrive 480ms cubic-bezier(0.2, 0.85, 0.35, 1) both;
+}
+
+.progressGoalBeacon circle {
+  fill: none;
+  stroke: #7aa99d;
+  stroke-width: 4;
+  opacity: 0.42;
+}
+
+.progressGoalBeacon--achieved circle {
+  stroke: #e2b95d;
+  opacity: 0.95;
+  filter: url("#progress-glow");
+  animation: progressTargetPulse 3.2s ease-in-out both;
+}
+
+.progressIllustrationPanel {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(430px, 1.2fr) minmax(330px, 0.8fr);
+  gap: clamp(20px, 3vw, 38px);
+  border: 1px solid #b9d3cb;
+  border-radius: 22px;
+  padding: clamp(18px, 3vw, 34px);
+  background:
+    radial-gradient(circle at 12% 10%, rgb(86 196 170 / 14%), transparent 30%),
+    linear-gradient(135deg, #f8fcfb 0%, #ffffff 50%, #edf7f4 100%);
+  box-shadow: 0 24px 64px rgb(16 35 63 / 10%);
+}
+
+.progressIllustrationPanelVisual {
+  align-self: center;
+}
+
+.progressIllustrationPanelCopy {
+  display: grid;
+  align-content: center;
+  gap: 11px;
+}
+
+.progressIllustrationPanelCopy > p {
+  margin: 0;
+  color: var(--ui-color-teal);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.progressIllustrationPanelCopy h2 {
+  margin: 0;
+  color: var(--ui-color-ink);
+  font-size: clamp(1.65rem, 3.4vw, 3.3rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.progressIllustrationPanelCopy > span {
+  color: var(--ui-color-muted);
+  font-size: 0.82rem;
+  line-height: 1.62;
+}
+
+.progressIllustrationStageTrack {
+  height: 7px;
+  margin: 4px 0;
+  border-radius: var(--ui-radius-pill);
+  overflow: hidden;
+  background: #dceae6;
+}
+
+.progressIllustrationStageTrack > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2d8b77, #76ceb7, #e1b85b);
+  transition: inline-size 600ms var(--ui-ease-standard);
+}
+
+.progressIllustrationMilestones {
+  display: grid;
+  gap: 5px;
+}
+
+.progressMilestone {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 9px;
+  align-items: start;
+  border-radius: 10px;
+  padding: 7px 8px;
+  color: var(--ui-color-muted);
+}
+
+.progressMilestone > span {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 1px solid var(--ui-color-border-strong);
+  border-radius: var(--ui-radius-pill);
+  background: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 800;
+}
+
+.progressMilestone div {
+  display: grid;
+  gap: 1px;
+}
+
+.progressMilestone strong {
+  color: inherit;
+  font-size: 0.74rem;
+}
+
+.progressMilestone small {
+  font-size: 0.62rem;
+  line-height: 1.35;
+}
+
+.progressMilestone--unlocked {
+  color: #477468;
+}
+
+.progressMilestone--unlocked > span {
+  border-color: #8ccbbb;
+  background: #e9f7f3;
+  color: #147967;
+}
+
+.progressMilestone--active {
+  background: #e8f5f1;
+  color: var(--ui-color-ink);
+}
+
+.progressMilestone--active > span {
+  border-color: #147967;
+  background: #147967;
+  color: #ffffff;
+  box-shadow: 0 0 0 5px rgb(20 121 103 / 10%);
+}
+
+.progressIllustrationSignals {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  border-top: 1px solid #cfe0db;
+  padding-top: 18px;
+}
+
+.progressSignal {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+  border-left: 3px solid #89bfb2;
+  padding: 4px 10px;
+}
+
+.progressSignal > span {
+  color: var(--ui-color-teal);
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.progressSignal > strong {
+  color: var(--ui-color-ink);
+  font-size: 0.76rem;
+  line-height: 1.3;
+}
+
+.progressSignal > small {
+  color: var(--ui-color-muted);
+  font-size: 0.61rem;
+  line-height: 1.38;
+}
+
+.progressSignal > div {
+  height: 3px;
+  margin-top: 3px;
+  border-radius: var(--ui-radius-pill);
+  overflow: hidden;
+  background: #ddeae7;
+}
+
+.progressSignal > div > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #3c9981;
+}
+
+@keyframes progressLeafArrive {
+  from { opacity: 0; scale: 0.2; }
+  to { opacity: 1; scale: 1; }
+}
+
+@keyframes progressLeafSway {
+  from { translate: -1px 0; }
+  to { translate: 2px -2px; }
+}
+
+@keyframes progressBookArrive {
+  from { opacity: 0; translate: 0 15px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes progressBarArrive {
+  from { opacity: 0; translate: -12px 0; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes progressLampBreathe {
+  0%, 100% { scale: 0.94; }
+  50% { scale: 1.06; }
+}
+
+@keyframes progressTargetPulse {
+  0%, 100% { opacity: 0.72; scale: 0.94; }
+  50% { opacity: 1; scale: 1.06; }
+}
+
+@keyframes progressPetBreathe {
+  0%, 100% { scale: 1; }
+  50% { scale: 1.01 0.985; }
+}
+
+@keyframes progressPawArrive {
+  from { opacity: 0; scale: 0.3; }
+  to { opacity: 0.86; scale: 1; }
+}
+
+@media (max-width: 1120px) {
+  .progressIllustrationPanel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .progressIllustrationPanelVisual {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 760px) {
+  .progressIllustration figcaption {
+    right: 3%;
+    bottom: 2%;
+    max-width: 160px;
+    padding: 8px 10px;
+  }
+
+  .progressIllustrationPanel {
+    border-radius: 14px;
+    padding: 16px 14px;
+  }
+
+  .progressIllustrationPanelCopy h2 {
+    font-size: clamp(1.65rem, 9vw, 2.7rem);
+  }
+
+  .progressIllustrationSignals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .progressIllustration figcaption {
+    position: static;
+    max-width: none;
+    margin-top: -4px;
+    border-color: #c9ded8;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .progressIllustrationSignals {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progressIllustration *,
+  .progressIllustrationStageTrack > span {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* The Home hero keeps the veterinary study scene, now lit for the dark academy theme. */
+.dashboardViewport[data-screen="home"] .progressIllustration {
+  filter: drop-shadow(0 28px 34px rgb(0 0 0 / 28%));
+}
+
+.dashboardViewport[data-screen="home"] .progressIllustration svg {
+  filter: saturate(0.78) brightness(0.86) contrast(1.06);
+}
+
+.dashboardViewport[data-screen="home"] .progressIllustration figcaption {
+  border-color: var(--arcane-border-gold);
+  background: rgb(10 15 27 / 82%);
+  box-shadow: var(--arcane-shadow-soft), var(--arcane-glow-gold);
+}
+
+.dashboardViewport[data-screen="home"] .progressIllustration figcaption span {
+  color: var(--arcane-gold);
+}
+
+.dashboardViewport[data-screen="home"] .progressIllustration figcaption strong {
+  color: var(--arcane-text);
+}
+
+.dashboardViewport[data-screen="home"] .progressIllustration figcaption small {
+  color: var(--arcane-text-muted);
+}
+
+.dashboardViewport[data-screen="home"] .progressSceneBackground {
+  stroke: rgb(91 214 189 / 38%);
+}
+
+.dashboardViewport[data-screen="home"] .progressSceneSun {
+  fill: var(--arcane-gold);
+}
+
+.dashboardViewport[data-screen="home"] .progressPaw--active {
+  fill: var(--arcane-emerald);
+}
+
+@media (max-width: 480px) {
+  .dashboardViewport[data-screen="home"] .progressIllustration figcaption {
+    border-color: var(--arcane-border-gold);
+    background: rgb(10 15 27 / 88%);
+    box-shadow: var(--arcane-shadow-soft);
+  }
+}
+
+/* Progress destination presents the study scene as a calm observatory. */
+.dashboardViewport[data-screen="progress"] .progressIllustrationPanel {
+  border-color: var(--arcane-border-emerald);
+  background:
+    radial-gradient(circle at 12% 10%, rgb(91 214 189 / 10%), transparent 30%),
+    radial-gradient(circle at 92% 4%, rgb(233 200 120 / 8%), transparent 28%),
+    linear-gradient(135deg, #111827 0%, #101b25 50%, #12251f 100%);
+  box-shadow: var(--arcane-shadow-card), inset 0 1px 0 rgb(255 255 255 / 4%);
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustration {
+  filter: drop-shadow(0 28px 34px rgb(0 0 0 / 28%));
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustration svg {
+  filter: saturate(0.78) brightness(0.84) contrast(1.08);
+}
+
+.dashboardViewport[data-screen="progress"] .progressLeaf {
+  animation: none;
+  transform: none;
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustration figcaption {
+  border-color: var(--arcane-border-gold);
+  background: rgb(10 15 27 / 84%);
+  box-shadow: var(--arcane-shadow-soft), var(--arcane-glow-gold);
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustration figcaption span {
+  color: var(--arcane-gold);
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustration figcaption strong,
+.dashboardViewport[data-screen="progress"] .progressIllustrationPanelCopy h2,
+.dashboardViewport[data-screen="progress"] .progressMilestone--active {
+  color: var(--arcane-text);
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustration figcaption small,
+.dashboardViewport[data-screen="progress"] .progressIllustrationPanelCopy > span,
+.dashboardViewport[data-screen="progress"] .progressMilestone,
+.dashboardViewport[data-screen="progress"] .progressSignal > small {
+  color: var(--arcane-text-muted);
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustrationPanelCopy > p,
+.dashboardViewport[data-screen="progress"] .progressSignal > span {
+  color: var(--arcane-emerald);
+  letter-spacing: 0.09em;
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustrationStageTrack,
+.dashboardViewport[data-screen="progress"] .progressSignal > div {
+  background: rgb(255 255 255 / 7%);
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustrationStageTrack > span,
+.dashboardViewport[data-screen="progress"] .progressSignal > div > span {
+  background: linear-gradient(90deg, var(--arcane-emerald-deep), var(--arcane-emerald), var(--arcane-gold));
+  box-shadow: var(--arcane-glow-emerald);
+}
+
+.dashboardViewport[data-screen="progress"] .progressMilestone {
+  border: 1px solid transparent;
+}
+
+.dashboardViewport[data-screen="progress"] .progressMilestone > span {
+  border-color: var(--arcane-border-strong);
+  background: rgb(5 9 17 / 62%);
+  color: var(--arcane-text-dim);
+}
+
+.dashboardViewport[data-screen="progress"] .progressMilestone--unlocked {
+  color: var(--arcane-text-soft);
+}
+
+.dashboardViewport[data-screen="progress"] .progressMilestone--unlocked > span {
+  border-color: var(--arcane-border-emerald);
+  background: rgb(91 214 189 / 9%);
+  color: var(--arcane-emerald);
+}
+
+.dashboardViewport[data-screen="progress"] .progressMilestone--active {
+  border-color: var(--arcane-border-emerald);
+  background: rgb(91 214 189 / 7%);
+}
+
+.dashboardViewport[data-screen="progress"] .progressMilestone--active > span {
+  border-color: var(--arcane-emerald);
+  background: var(--arcane-emerald-deep);
+  color: #ffffff;
+  box-shadow: var(--arcane-glow-emerald);
+}
+
+.dashboardViewport[data-screen="progress"] .progressIllustrationSignals {
+  border-top-color: var(--arcane-border);
+}
+
+.dashboardViewport[data-screen="progress"] .progressSignal {
+  border-left-color: var(--arcane-border-emerald);
+  background: rgb(255 255 255 / 1.5%);
+}
+
+.dashboardViewport[data-screen="progress"] .progressSignal > strong {
+  color: var(--arcane-text);
+}
+
+.dashboardViewport[data-screen="progress"] .progressSceneBackground {
+  stroke: rgb(91 214 189 / 38%);
+}
+
+.dashboardViewport[data-screen="progress"] .progressSceneSun {
+  fill: var(--arcane-gold);
+}
+
+.dashboardViewport[data-screen="progress"] .progressPaw--active {
+  fill: var(--arcane-emerald);
+}
+
+@media (max-width: 480px) {
+  .dashboardViewport[data-screen="progress"] .progressIllustration figcaption {
+    border-color: var(--arcane-border-gold);
+    background: rgb(10 15 27 / 88%);
+    box-shadow: var(--arcane-shadow-soft);
+  }
+}

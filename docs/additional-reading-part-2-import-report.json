@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-06-13T03:44:47.212Z",
+  "status": "complete",
+  "sources": [
+    {
+      "label": "TOEFL ITP Reading Comprehension 8 Soal Part 2",
+      "path": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Reading Comprehension 8 Soal Part 2.docx",
+      "sha256": "06e9fe0a50c77475514254b8db140e451331da5cf7f0d0f0541922de647a1ed3",
+      "parsedSafely": true,
+      "passageCount": 14,
+      "questionCount": 112,
+      "passages": [
+        {
+          "id": "reading-part2-lcrq-p1",
+          "sourceId": "LCRQ1-LCRQ8",
+          "title": "Limestone Caves and the Memory of Water",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-mctq-p1",
+          "sourceId": "MCTQ1-MCTQ8",
+          "title": "The Mechanical Clock and the Organization of Daily Life",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-dpwq-p1",
+          "sourceId": "DPWQ1-DPWQ8",
+          "title": "Desert Plants and the Art of Waiting",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-pcwq-p1",
+          "sourceId": "PCWQ1-PCWQ8",
+          "title": "Paper and the Changing Work of Writing",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-stgq-p1",
+          "sourceId": "STGQ1-STGQ8",
+          "title": "Sea Turtles and the Geography of the Ocean",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-tcmq-p1",
+          "sourceId": "TCMQ1-TCMQ8",
+          "title": "Textiles and the Movement of Culture",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-ftlq-p1",
+          "sourceId": "FTLQ1-FTLQ8",
+          "title": "Fireflies and the Timing of Light",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-waaq-p1",
+          "sourceId": "WAAQ1-WAAQ8",
+          "title": "Windcatchers and the Architecture of Moving Air",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-mswq-p1",
+          "sourceId": "MSWQ1-MSWQ8",
+          "title": "Monsoon Winds and Seasonal Worlds",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-acmq-p1",
+          "sourceId": "ACMQ1-ACMQ8",
+          "title": "The Astrolabe and the Culture of Measurement",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-mffq-p1",
+          "sourceId": "MFFQ1-MFFQ8",
+          "title": "Mosses and the Quiet Work of Forest Floors",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-cenq-p1",
+          "sourceId": "CENQ1-CENQ8",
+          "title": "The Compass and the Expansion of Navigation",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-crlq-p1",
+          "sourceId": "CRLQ1-CRLQ8",
+          "title": "Coral Reefs and the Architecture of Coastal Life",
+          "questionCount": 8
+        },
+        {
+          "id": "reading-part2-gwbq-p1",
+          "sourceId": "GWBQ1-GWBQ8",
+          "title": "Glass Windows and the Changing Experience of Buildings",
+          "questionCount": 8
+        }
+      ]
+    },
+    {
+      "label": "TOEFL ITP Reading Comprehension 9 Soal Part 2",
+      "path": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Reading Comprehension 9 Soal Part 2.docx",
+      "sha256": "94b21f447e8c7eeca701b0c5ac8da59e0d22e6b26b1841ce39acbd15c3520d9a",
+      "parsedSafely": true,
+      "passageCount": 10,
+      "questionCount": 90,
+      "passages": [
+        {
+          "id": "reading-part2-nmrq-p1",
+          "sourceId": "NMRQ1-NMRQ9",
+          "title": "Night Markets: Commerce, Memory, and the Use of Urban Space",
+          "questionCount": 9
+        },
+        {
+          "id": "reading-part2-brcq-p1",
+          "sourceId": "BRCQ1-BRCQ9",
+          "title": "Bridges That Change the Way People Read a City",
+          "questionCount": 9
+        },
+        {
+          "id": "reading-part2-utrq-p1",
+          "sourceId": "UTRQ1-UTRQ9",
+          "title": "Urban Trees: Shade, Memory, and the Hidden Work of City Landscapes",
+          "questionCount": 9
+        },
+        {
+          "id": "reading-part2-smrq-p1",
+          "sourceId": "SMRQ1-SMRQ9",
+          "title": "Small Museums and the Stories That Refuse to Disappear",
+          "questionCount": 9
+        },
+        {
+          "id": "reading-part2-plrq-p1",
+          "sourceId": "PLRQ1-PLRQ9",
+          "title": "Public Libraries in a Digital City",
+          "questionCount": 9
+        },
+        {
+          "id": "reading-part2-mbrq-p1",
+          "sourceId": "MBRQ1-MBRQ9",
+          "title": "Migratory Birds and the Geography of Return",
+          "questionCount": 9
+        },
+        {
+          "id": "reading-part2-cgrq-p1",
+          "sourceId": "CGRQ1-CGRQ9",
+          "title": "Community Gardens and the Social Life of Small Green Spaces",
+          "questionCount": 9
+        },
+        {
+          "id": "reading-part2-rsrq-p1",
+          "sourceId": "RSRQ1-RSRQ9",
+          "title": "Rainy Streets and the Design of Everyday Resilience",
+          "questionCount": 9
+        },
+        {
+          "id": "reading-part2-cdrq-p1",
+          "sourceId": "CDRQ1-CDRQ9",
+          "title": "The City at Dawn: Morning Routines and Urban Rhythm",
+          "questionCount": 9
+        },
+        {
+          "id": "reading-part2-nffq-p1",
+          "sourceId": "NFFQ1-NFFQ9",
+          "title": "Neighborhood Football Fields and the Lessons of Shared Space",
+          "questionCount": 9
+        }
+      ]
+    }
+  ],
+  "before": {
+    "passageCount": 23,
+    "questionCount": 192
+  },
+  "imported": {
+    "passageCount": 24,
+    "questionCount": 202
+  },
+  "after": {
+    "passageCount": 47,
+    "questionCount": 394
+  },
+  "notes": [
+    "Question content and premium explanations were extracted from the supplied DOCX source files.",
+    "Reading questions remain nested under their original passages.",
+    "The importer verifies counts, answer text, option analysis, IDs, and passage relationships before writing."
+  ]
+}

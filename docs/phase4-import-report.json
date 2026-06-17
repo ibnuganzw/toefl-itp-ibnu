@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-06-02T06:26:02.636345+00:00",
+  "status": "complete",
+  "sources": [
+    {
+      "label": "Old single-file HTML app",
+      "path": "C:\\Users\\ibnuh\\Downloads\\Test_TOEFL_revisi_FIX_kunci_C.html",
+      "role": "old-html-reference",
+      "parsedSafely": true,
+      "notes": [
+        "Feature and behavior reference only.",
+        "Legacy Simulation A/B labels were not used as final app modes."
+      ]
+    },
+    {
+      "label": "Final Structure and Written Expression document",
+      "path": "C:\\Users\\ibnuh\\Downloads\\Soal TOEFL ITP\\Structure and Written.docx",
+      "role": "structure-written-source",
+      "parsedSafely": true,
+      "detectedCount": 180,
+      "notes": [
+        "Imported from DOCX paragraph blocks using legacy item headings.",
+        "AS/AW/BS/BW labels preserved as metadata/IDs, not fixed simulations."
+      ]
+    },
+    {
+      "label": "Reading Comprehension document",
+      "path": "C:\\Users\\ibnuh\\Downloads\\Soal TOEFL ITP\\Reading Comprehension.docx",
+      "role": "reading-source",
+      "parsedSafely": true,
+      "detectedCount": 120,
+      "notes": [
+        "Imported GNRQ1-GNRQ40, VRQ1-VRQ40, and RQ1-RQ40.",
+        "Reading questions remain nested under their original passage/naskah unit.",
+        "The RQ set uses Naskah headings."
+      ]
+    }
+  ],
+  "importedStructureCount": 70,
+  "importedWrittenCount": 110,
+  "importedReadingPassageCount": 15,
+  "importedReadingQuestionCount": 120,
+  "uncertainItems": [],
+  "rejectedItems": [],
+  "notes": [
+    "Question content was extracted from final DOCX source files.",
+    "No source DOCX/HTML/TXT files were modified.",
+    "Run validate:bank and validate:bank:strict after import."
+  ]
+}

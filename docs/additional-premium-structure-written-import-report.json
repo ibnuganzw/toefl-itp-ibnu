@@ -1,0 +1,208 @@
+{
+  "generatedAt": "2026-06-13T11:59:01.394Z",
+  "mode": "write",
+  "sources": [
+    {
+      "key": "PSW2",
+      "path": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "detectedBlocks": 105,
+      "acceptedStructure": 45,
+      "acceptedWritten": 45,
+      "skippedDuplicateBlocks": 15
+    },
+    {
+      "key": "PSW3",
+      "path": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "detectedBlocks": 120,
+      "acceptedStructure": 45,
+      "acceptedWritten": 60,
+      "skippedDuplicateBlocks": 15
+    }
+  ],
+  "importedStructureCount": 90,
+  "importedWrittenCount": 105,
+  "importedTotalCount": 195,
+  "skippedDuplicates": [
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W16",
+      "duplicateOf": "PSW2-W16",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W17",
+      "duplicateOf": "PSW2-W17",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W18",
+      "duplicateOf": "PSW2-W18",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W19",
+      "duplicateOf": "PSW2-W19",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W20",
+      "duplicateOf": "PSW2-W20",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W21",
+      "duplicateOf": "PSW2-W21",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W22",
+      "duplicateOf": "PSW2-W22",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W23",
+      "duplicateOf": "PSW2-W23",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W24",
+      "duplicateOf": "PSW2-W24",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W25",
+      "duplicateOf": "PSW2-W25",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W26",
+      "duplicateOf": "PSW2-W26",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W27",
+      "duplicateOf": "PSW2-W27",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W28",
+      "duplicateOf": "PSW2-W28",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W29",
+      "duplicateOf": "PSW2-W29",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\Soal Premium TOEFL ITP Part 2.docx",
+      "id": "PSW2-W30",
+      "duplicateOf": "PSW2-W30",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S16",
+      "duplicateOf": "PSW3-S16",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S17",
+      "duplicateOf": "PSW3-S17",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S18",
+      "duplicateOf": "PSW3-S18",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S19",
+      "duplicateOf": "PSW3-S19",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S20",
+      "duplicateOf": "PSW3-S20",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S21",
+      "duplicateOf": "PSW3-S21",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S22",
+      "duplicateOf": "PSW3-S22",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S23",
+      "duplicateOf": "PSW3-S23",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S24",
+      "duplicateOf": "PSW3-S24",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S25",
+      "duplicateOf": "PSW3-S25",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S26",
+      "duplicateOf": "PSW3-S26",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S27",
+      "duplicateOf": "PSW3-S27",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S28",
+      "duplicateOf": "PSW3-S28",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S29",
+      "duplicateOf": "PSW3-S29",
+      "reason": "Exact repeated question block inside the same source document."
+    },
+    {
+      "source": "C:\\Users\\ibnuh\\Downloads\\TOEFL ITP Structure Written Part 3.docx",
+      "id": "PSW3-S30",
+      "duplicateOf": "PSW3-S30",
+      "reason": "Exact repeated question block inside the same source document."
+    }
+  ],
+  "issues": []
+}

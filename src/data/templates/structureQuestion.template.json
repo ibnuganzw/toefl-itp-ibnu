@@ -1,0 +1,32 @@
+{
+  "id": "structure-example-id",
+  "sourceId": "optional-source-id",
+  "legacyId": "LS1",
+  "section": "structure",
+  "active": false,
+  "difficulty": "unknown",
+  "grammarPattern": "Subject-Verb Agreement",
+  "questionText": "The findings from the recent laboratory study ____ that the new compound affects bacterial growth.",
+  "choices": {
+    "A": "suggests",
+    "B": "suggest",
+    "C": "suggesting",
+    "D": "to suggest"
+  },
+  "correctAnswer": "B",
+  "sentenceStructureExplanation": "Preserve the original source explanation here.",
+  "explanation": {
+    "summary": "Preserve the original source summary here.",
+    "reasoning": "Preserve the source reasoning or cara membaca kalimat here.",
+    "whyCorrect": "Preserve why the correct option is correct.",
+    "optionAnalysis": {
+      "A": "Preserve option A analysis.",
+      "B": "Preserve option B analysis.",
+      "C": "Preserve option C analysis.",
+      "D": "Preserve option D analysis."
+    },
+    "toeflTrap": "Preserve TOEFL trap notes.",
+    "quickNote": "Preserve quick note."
+  },
+  "tags": []
+}

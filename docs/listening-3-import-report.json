@@ -1,0 +1,730 @@
+{
+  "generatedAt": "2026-06-11T15:50:17.334Z",
+  "mode": "write",
+  "sourceDocument": "C:\\Users\\ibnuh\\Downloads\\Audio Listening 3\\TOEFL ITP Listening Comprehension Part 3 Final.docx",
+  "sourceAudioRoot": "C:\\Users\\ibnuh\\Downloads\\Audio Listening 3",
+  "numberingRule": "Part letter plus local source number is authoritative because local numbers overlap across Parts A, B, and C.",
+  "importedSetCount": 70,
+  "importedQuestionCount": 100,
+  "importedQuestionCountsByPart": {
+    "A": 60,
+    "B": 16,
+    "C": 24
+  },
+  "audioFileCount": 110,
+  "totalSetCount": 140,
+  "totalQuestionCount": 200,
+  "sets": [
+    {
+      "id": "listening-3-a-q01",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-001"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-01.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q02",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-002"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-02.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q03",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-003"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-03.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q04",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-004"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-04.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q05",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-005"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-05.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q06",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-006"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-06.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q07",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-007"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-07.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q08",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-008"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-08.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q09",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-009"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-09.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q10",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-010"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-10.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q11",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-011"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-11.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q12",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-012"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-12.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q13",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-013"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-13.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q14",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-014"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-14.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q15",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-015"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-15.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q16",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-016"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-16.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q17",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-017"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-17.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q18",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-018"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-18.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q19",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-019"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-19.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q20",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-020"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-20.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q21",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-021"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-21.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q22",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-022"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-22.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q23",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-023"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-23.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q24",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-024"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-24.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q25",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-025"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-25.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q26",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-026"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-26.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q27",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-027"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-27.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q28",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-028"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-28.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q29",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-029"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-29.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q30",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-030"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-30.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q31",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-031"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-31.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q32",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-032"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-32.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q33",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-033"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-33.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q34",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-034"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-34.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q35",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-035"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-35.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q36",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-036"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-36.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q37",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-037"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-37.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q38",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-038"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-38.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q39",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-039"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-39.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q40",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-040"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-40.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q41",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-041"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-41.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q42",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-042"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-42.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q43",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-043"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-43.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q44",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-044"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-44.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q45",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-045"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-45.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q46",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-046"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-46.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q47",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-047"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-47.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q48",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-048"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-48.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q49",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-049"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-49.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q50",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-050"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-50.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q51",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-051"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-51.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q52",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-052"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-52.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q53",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-053"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-53.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q54",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-054"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-54.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q55",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-055"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-55.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q56",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-056"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-56.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q57",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-057"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-57.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q58",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-058"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-58.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q59",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-059"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-59.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-a-q60",
+      "part": "A",
+      "sourceNumbers": [
+        "LC3-A-060"
+      ],
+      "audioUrl": "/audio/listening/paket-3-a-soal-60.mp3",
+      "questionAudioUrls": []
+    },
+    {
+      "id": "listening-3-b-conversation-31-34",
+      "part": "B",
+      "sourceNumbers": [
+        "LC3-B-031",
+        "LC3-B-032",
+        "LC3-B-033",
+        "LC3-B-034"
+      ],
+      "audioUrl": "/audio/listening/paket-3-b-dialog-31-34.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-b-soal-31.mp3",
+        "/audio/listening/paket-3-b-soal-32.mp3",
+        "/audio/listening/paket-3-b-soal-33.mp3",
+        "/audio/listening/paket-3-b-soal-34.mp3"
+      ]
+    },
+    {
+      "id": "listening-3-b-conversation-35-38",
+      "part": "B",
+      "sourceNumbers": [
+        "LC3-B-035",
+        "LC3-B-036",
+        "LC3-B-037",
+        "LC3-B-038"
+      ],
+      "audioUrl": "/audio/listening/paket-3-b-dialog-35-38.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-b-soal-35.mp3",
+        "/audio/listening/paket-3-b-soal-36.mp3",
+        "/audio/listening/paket-3-b-soal-37.mp3",
+        "/audio/listening/paket-3-b-soal-38.mp3"
+      ]
+    },
+    {
+      "id": "listening-3-b-conversation-39-42",
+      "part": "B",
+      "sourceNumbers": [
+        "LC3-B-039",
+        "LC3-B-040",
+        "LC3-B-041",
+        "LC3-B-042"
+      ],
+      "audioUrl": "/audio/listening/paket-3-b-dialog-39-42.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-b-soal-39.mp3",
+        "/audio/listening/paket-3-b-soal-40.mp3",
+        "/audio/listening/paket-3-b-soal-41.mp3",
+        "/audio/listening/paket-3-b-soal-42.mp3"
+      ]
+    },
+    {
+      "id": "listening-3-b-conversation-43-46",
+      "part": "B",
+      "sourceNumbers": [
+        "LC3-B-043",
+        "LC3-B-044",
+        "LC3-B-045",
+        "LC3-B-046"
+      ],
+      "audioUrl": "/audio/listening/paket-3-b-dialog-43-46.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-b-soal-43.mp3",
+        "/audio/listening/paket-3-b-soal-44.mp3",
+        "/audio/listening/paket-3-b-soal-45.mp3",
+        "/audio/listening/paket-3-b-soal-46.mp3"
+      ]
+    },
+    {
+      "id": "listening-3-c-talk-39-42",
+      "part": "C",
+      "sourceNumbers": [
+        "LC3-C-039",
+        "LC3-C-040",
+        "LC3-C-041",
+        "LC3-C-042"
+      ],
+      "audioUrl": "/audio/listening/paket-3-c-talk-39-42.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-c-soal-39.mp3",
+        "/audio/listening/paket-3-c-soal-40.mp3",
+        "/audio/listening/paket-3-c-soal-41.mp3",
+        "/audio/listening/paket-3-c-soal-42.mp3"
+      ]
+    },
+    {
+      "id": "listening-3-c-talk-43-46",
+      "part": "C",
+      "sourceNumbers": [
+        "LC3-C-043",
+        "LC3-C-044",
+        "LC3-C-045",
+        "LC3-C-046"
+      ],
+      "audioUrl": "/audio/listening/paket-3-c-talk-43-46.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-c-soal-43.mp3",
+        "/audio/listening/paket-3-c-soal-44.mp3",
+        "/audio/listening/paket-3-c-soal-45.mp3",
+        "/audio/listening/paket-3-c-soal-46.mp3"
+      ]
+    },
+    {
+      "id": "listening-3-c-talk-47-50",
+      "part": "C",
+      "sourceNumbers": [
+        "LC3-C-047",
+        "LC3-C-048",
+        "LC3-C-049",
+        "LC3-C-050"
+      ],
+      "audioUrl": "/audio/listening/paket-3-c-talk-47-50.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-c-soal-47.mp3",
+        "/audio/listening/paket-3-c-soal-48.mp3",
+        "/audio/listening/paket-3-c-soal-49.mp3",
+        "/audio/listening/paket-3-c-soal-50.mp3"
+      ]
+    },
+    {
+      "id": "listening-3-c-talk-51-54",
+      "part": "C",
+      "sourceNumbers": [
+        "LC3-C-051",
+        "LC3-C-052",
+        "LC3-C-053",
+        "LC3-C-054"
+      ],
+      "audioUrl": "/audio/listening/paket-3-c-talk-51-54.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-c-soal-51.mp3",
+        "/audio/listening/paket-3-c-soal-52.mp3",
+        "/audio/listening/paket-3-c-soal-53.mp3",
+        "/audio/listening/paket-3-c-soal-54.mp3"
+      ]
+    },
+    {
+      "id": "listening-3-c-talk-55-58",
+      "part": "C",
+      "sourceNumbers": [
+        "LC3-C-055",
+        "LC3-C-056",
+        "LC3-C-057",
+        "LC3-C-058"
+      ],
+      "audioUrl": "/audio/listening/paket-3-c-talk-55-58.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-c-soal-55.mp3",
+        "/audio/listening/paket-3-c-soal-56.mp3",
+        "/audio/listening/paket-3-c-soal-57.mp3",
+        "/audio/listening/paket-3-c-soal-58.mp3"
+      ]
+    },
+    {
+      "id": "listening-3-c-talk-59-62",
+      "part": "C",
+      "sourceNumbers": [
+        "LC3-C-059",
+        "LC3-C-060",
+        "LC3-C-061",
+        "LC3-C-062"
+      ],
+      "audioUrl": "/audio/listening/paket-3-c-talk-59-62.mp3",
+      "questionAudioUrls": [
+        "/audio/listening/paket-3-c-soal-59.mp3",
+        "/audio/listening/paket-3-c-soal-60.mp3",
+        "/audio/listening/paket-3-c-soal-61.mp3",
+        "/audio/listening/paket-3-c-soal-62.mp3"
+      ]
+    }
+  ],
+  "issues": []
+}
