@@ -776,3 +776,38 @@
     grid-template-rows: auto auto minmax(0, 1fr);
   }
 }
+
+/* On touch devices forced into the desktop exam layout (Android "desktop
+   mode"), let the page flow and scroll as one document instead of locking to
+   a single 100dvh screen with inner-only scrolling. This restores the ability
+   to pull down the browser's address bar on Android while keeping the
+   two-column desktop layout. */
+@media (min-width: 961px) and (pointer: coarse) {
+  .dashboardViewport[data-screen="session"],
+  .dashboardViewport[data-screen="session"] .dashboardFrame,
+  .dashboardViewport[data-screen="session"] .dashboardMain {
+    height: auto;
+    min-height: 100dvh;
+    overflow: visible;
+  }
+
+  .dashboardViewport[data-screen="session"] .dashboardContent {
+    overflow: visible;
+  }
+
+  .dashboardViewport[data-screen="session"] .sessionDashboardShell,
+  .dashboardViewport[data-screen="session"] .sessionLayout,
+  .dashboardViewport[data-screen="session"] .questionMap,
+  .dashboardViewport[data-screen="session"] .questionWorkspace,
+  .dashboardViewport[data-screen="session"] .singleWorkspace,
+  .dashboardViewport[data-screen="session"] .readingWorkspace,
+  .dashboardViewport[data-screen="session"] .listeningWorkspace {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .dashboardViewport[data-screen="session"] .mapGroups {
+    overflow: visible;
+  }
+}

@@ -1,4 +1,4 @@
-import { type ReactNode, useCallback, useEffect, useLayoutEffect, useMemo, useState } from "react";
+import { type ReactNode, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { questionBank } from "./data/questionBank";
 import { TOEFL_ITP_LISTENING_QUESTION_COUNT } from "./data/listeningBank";
 import type { AnswerOptionKey } from "./types/questionTypes";
@@ -464,6 +464,39 @@ function App() {
       meta.setAttribute("content", RESPONSIVE);
     };
   }, [screen]);
+
+  // Keep refs fresh for the popstate handler, which is registered only once.
+  const screenRef = useRef(screen);
+  const closeCurrentScreenRef = useRef(closeCurrentScreen);
+  useEffect(() => {
+    screenRef.current = screen;
+    closeCurrentScreenRef.current = closeCurrentScreen;
+  });
+
+  // Arm a history "trap" entry the first time we leave Beranda so the browser
+  // Back button has an entry to consume instead of leaving the site outright.
+  const backTrapArmedRef = useRef(false);
+  useEffect(() => {
+    if (screen !== "home" && !backTrapArmedRef.current) {
+      window.history.pushState({ inApp: true }, "");
+      backTrapArmedRef.current = true;
+    } else if (screen === "home") {
+      backTrapArmedRef.current = false;
+    }
+  }, [screen]);
+
+  // Translate the browser/system Back action (desktop back arrow, Android back
+  // button/gesture) into in-app back navigation. Only Beranda falls through and
+  // actually leaves the app.
+  useEffect(() => {
+    const onPopState = () => {
+      if (screenRef.current === "home") return;
+      window.history.pushState({ inApp: true }, "");
+      closeCurrentScreenRef.current();
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
 
   useLayoutEffect(() => {
     if (!session || screen !== "session") return;
