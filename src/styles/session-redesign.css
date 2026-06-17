@@ -811,16 +811,3 @@
     overflow: visible;
   }
 }
-
-/* Desktop only: render the question workspace at ~90% scale — the full 100%
-   size reads a touch too large for the exam/learning view. Width and height
-   are compensated (/0.9) so the zoomed shell still fills the locked viewport
-   with no gap. Touch devices (Android "desktop mode") are excluded since they
-   already scale to fit through the forced viewport. */
-@media (min-width: 961px) and (pointer: fine) {
-  .dashboardViewport[data-screen="session"] .sessionDashboardShell {
-    zoom: 0.9;
-    width: calc(100% / 0.9);
-    height: calc(100% / 0.9);
-  }
-}
